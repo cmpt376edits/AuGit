@@ -26,6 +26,15 @@ public class FunctionDescription {
     this.args = args;
   }
 
+  public String getRetType() {
+    return retType;
+  }
+
+  public void setRetType(String retType) {
+    this.retType = retType;
+  }
+
+  private String retType;
   private String functionName;
   private int numArgs;
   private ArrayList<String> args;
