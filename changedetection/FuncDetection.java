@@ -1,6 +1,9 @@
 import com.sun.deploy.util.StringUtils;
 
+import java.util.ArrayList;
+
 public class FuncDetection {
+    private ArrayList<FunctionDescription> funcs;
 
   /**
    * This function is from:
@@ -58,6 +61,7 @@ public class FuncDetection {
    * @param current
    */
   public static void detectFunction(String origin, String current) {
+
     String diff = difference(origin, current);
   }
 
