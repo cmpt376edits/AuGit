@@ -3,9 +3,7 @@ import com.sun.deploy.util.StringUtils;
 import java.util.ArrayList;
 
 public class FuncDetection {
-    private ArrayList<FunctionDescription> funcs;
-    private int funcNum = 0;
-
+  private ArrayList<FunctionDescription> funcs;
 
   /**
    * This function is from:
@@ -67,10 +65,28 @@ public class FuncDetection {
     String diff = difference(origin, current);
   }
 
-  public String getMessage(){
+  public String getMessage() {
+    String message = "";
 
-      return "";
+    for (int i = 0; i < funcs.size(); i++) {
+      message += "Created function ";
+      if (funcs.get(i).getRetType().equals("void")) {
+        message += "with void return type, ";
+      } else {
+        message += "with ";
+        message += funcs.get(i).getRetType();
+        message += " return type,";
+      }
+      message += funcs.get(i).getFunctionName();
+      message += " and arguments as follows: ";
+      for (int j = 0; j < funcs.get(i).getArgs().size(); j++) {
+          message += funcs.get(i).getArgs().get(j);
+          message += ", ";
+      }
+      message += ".";
+    }
+
+    System.out.println(message);
+    return "";
   }
-
 }
-
