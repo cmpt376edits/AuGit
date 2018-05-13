@@ -80,8 +80,12 @@ public class FuncDetection {
       message += funcs.get(i).getFunctionName();
       message += " and arguments as follows: ";
       for (int j = 0; j < funcs.get(i).getArgs().size(); j++) {
-          message += funcs.get(i).getArgs().get(j);
+        message += funcs.get(i).getArgs().get(j);
+        if (j + 1 == funcs.get(i).getArgs().size()) {
+
+        } else {
           message += ", ";
+        }
       }
       message += ".";
     }
