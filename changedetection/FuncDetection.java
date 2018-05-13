@@ -1,7 +1,9 @@
 import com.sun.deploy.util.StringUtils;
 
-public class FuncDetection {
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
+public class FuncDetection {
 
   /**
    * This function is from:
@@ -58,10 +60,50 @@ public class FuncDetection {
    * @param origin
    * @param current
    */
-  public static void detectFunction(String origin, String current) {
+  public static void detectFunctions(String origin, String current) {
+
     String diff = difference(origin, current);
   }
 
-  public static void main(String[] args) {}
+  public static String getMessage(ArrayList<FunctionDescription> functionDescriptions) {
+    StringBuilder message = new StringBuilder();
 
+    for (int i = 0; i < functionDescriptions.size(); i++) {
+      message.append("Created function ");
+      if (functionDescriptions.get(i).getRetType().equals("void")) {
+        message.append("with void return type, called ");
+      } else {
+        message.append("with ");
+        message.append(functionDescriptions.get(i).getRetType());
+        message.append(" return type, called ");
+      }
+      message.append(functionDescriptions.get(i).getFunctionName());
+      message.append(" and arguments as follows: ");
+      for (int j = 0; j < functionDescriptions.get(i).getArgs().size(); j++) {
+        message.append(functionDescriptions.get(i).getArgs().get(j));
+        if (j + 1 == functionDescriptions.get(i).getArgs().size()) {
+
+        } else {
+          message.append(", ");
+        }
+      }
+      message.append(".");
+    }
+
+    System.out.println(message.toString());
+    return "";
+  }
+
+  public static void main(String[] args) {
+      ArrayList<String> argu = new ArrayList<>();
+      argu.add("String name");
+      argu.add("int Time");
+      FunctionDescription test = new FunctionDescription("randomFunction", 2, argu, "Object");
+
+
+      ArrayList<FunctionDescription> fun = new ArrayList<>();
+      fun.add(test);
+      getMessage(fun);
+
+  }
 }
