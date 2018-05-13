@@ -1,6 +1,6 @@
 import com.sun.deploy.util.StringUtils;
 
-public class funcDetection {
+public class FuncDetection {
 
   /**
    * This function is from:
@@ -53,17 +53,13 @@ public class funcDetection {
     return -1;
   }
 
-    /**
-     *
-     * @param origin
-     * @param current
-     */
+  /**
+   * @param origin
+   * @param current
+   */
   public static void detectFunction(String origin, String current) {
     String diff = difference(origin, current);
-      
   }
 
-  public static void main(String[] args) {
-
-  }
+  public static void main(String[] args) {}
 }
