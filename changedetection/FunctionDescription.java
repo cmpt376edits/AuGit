@@ -40,9 +40,9 @@ public class FunctionDescription {
   private ArrayList<String> args;
 
   public FunctionDescription(String functionName, int numArgs, ArrayList<String> args, String retType) {
-    functionName = functionName;
-    numArgs = numArgs;
-    args = args;
-    retType = retType;
+    this.functionName = functionName;
+    this.numArgs = numArgs;
+    this.args = args;
+    this.retType = retType;
   }
 }
