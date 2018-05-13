@@ -2,6 +2,7 @@ import com.sun.deploy.util.StringUtils;
 
 public class FuncDetection {
 
+
   /**
    * This function is from:
    * http://www.java2s.com/Tutorial/Java/0040__Data-Type/ComparestwoStringsandreturnstheportionwheretheydiffer.htm
@@ -62,4 +63,5 @@ public class FuncDetection {
   }
 
   public static void main(String[] args) {}
+
 }
