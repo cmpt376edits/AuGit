@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class FuncDetection {
     private ArrayList<FunctionDescription> funcs;
+    private int funcNum = 0;
 
 
   /**
@@ -66,8 +67,10 @@ public class FuncDetection {
     String diff = difference(origin, current);
   }
 
-  // This will be renamed in the future and we will run all detection functions and then concat all their messages
-  public static void main(String[] args) {}
+  public String getMessage(){
+
+      return "";
+  }
 
 }
 
