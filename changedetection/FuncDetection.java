@@ -61,11 +61,13 @@ public class FuncDetection {
    * @param origin
    * @param current
    */
-  public static void detectFunction(String origin, String current) {
+  public static void detectFunctions(String origin, String current) {
 
     String diff = difference(origin, current);
   }
 
+  // This will be renamed in the future and we will run all detection functions and then concat all their messages
   public static void main(String[] args) {}
 
 }
+
