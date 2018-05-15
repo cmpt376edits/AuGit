@@ -1,0 +1,22 @@
+Why AuGit?
+==============================================================
+
+If you have never developed software then its unlikely you have had to deal with making frequent Git Commit messages
+however, in developing AuGit we believe we can save developers time and help everyone maintain their sanity.
+
+AuGit creates automatic git commit messages for you based on:
+==============================================================
+
+(x) Function Addition/ Deletion
+( ) Comment Addition/ Deletion
+( ) Javadoc Addition Deletion
+( ) Class Addition Deletion
+( ) File Addition Deletion
+
+AuGit Supports the following languages:
+==============================================================
+
+(x) Java
+( ) Python
+( ) C
+( ) C#
