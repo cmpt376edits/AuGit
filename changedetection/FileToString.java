@@ -8,7 +8,7 @@ public class FileToString{
      * @param filePath : String
      * @return String/null
      */
-    public static String convertToString(String filePath){
+    public static String convertToString(String filePath) {
         File file = new File(filePath);
         StringBuilder s = new StringBuilder();
         try {
@@ -22,13 +22,13 @@ public class FileToString{
                 buf = in.readLine();
             }
             return s.toString();
-        }catch(IOException iox) {
+        } catch(IOException iox) {
             iox.printStackTrace();
         }
         return null;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         String filePath = "/Users/Reece/Ellen's stuff/Projects/AuGit/changedetection/FunctionDescription.java";
         String res = convertToString(filePath);
         System.out.println(res);
