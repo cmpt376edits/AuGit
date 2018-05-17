@@ -3,6 +3,7 @@ How To Contribute To AuGit
 
 New Features/Changes
 --------------------
+
 1) Features etc. can be discussed in the Facebook Group if you want input etc. 
 2) Once we have determined that a feature or change should be made you should add a card to the icebox 
     (here: https://github.com/reecemartin/AuGit/projects/1)
@@ -10,6 +11,7 @@ New Features/Changes
 
 Adding Features/Changes
 -----------------------
+
 1) If you want to add a feature go and pick it up from the icebox and assign yourself to it so that we don't have 2
     people working on the same feature at once
 2) Build each feature on a new branch where the branch name is the [...] from the icebox to in progress (you can create a branch with title       [...] with the command `git checkout -b [...]`), add @(your-username) to the beginning of the note
