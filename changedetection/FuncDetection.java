@@ -57,6 +57,7 @@ public class FuncDetection {
      */
   public static void detectFunctions(String origin, String current) {
     String diff = difference(origin, current);
+    
   }
 
   public static String getMessage(ArrayList<FunctionDescription> functionDescriptions) {
