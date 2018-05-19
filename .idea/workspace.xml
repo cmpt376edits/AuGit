@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e45eb15d-0337-4eb0-af0b-d1789f9172a7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/changedetection/FuncDetection.java" afterPath="$PROJECT_DIR$/changedetection/FuncDetection.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,8 +37,8 @@
       <file leaf-file-name="FuncDetection.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/changedetection/FuncDetection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="912">
-              <caret line="72" column="27" lean-forward="false" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
+            <state relative-caret-position="1291">
+              <caret line="118" column="30" lean-forward="false" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -339,8 +340,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/changedetection/FuncDetection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="72" column="27" lean-forward="false" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
+        <state relative-caret-position="1291">
+          <caret line="118" column="30" lean-forward="false" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
           <folding />
         </state>
       </provider>
