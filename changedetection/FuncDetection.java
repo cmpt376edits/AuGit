@@ -128,6 +128,8 @@ public static class FuncDetection {
         // Get reserved words for installed plugins and libraries
         // getReservedLibraries call
 
+        List<int> checkedIndices = new ArrayList<>();
+
 
 
     }
