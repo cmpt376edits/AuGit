@@ -29,6 +29,15 @@ public static class FuncDetection {
     }
 
     /**
+     * TODO Finish this function
+     *
+     * @return List<String> of the reserved words for our libraries
+     */
+    public static List<String> getReservedLibraries(List<String> libraries){
+        return null;
+    }
+
+    /**
      * Compares two strings and returns the index of the first
      * difference between the strings
      *
