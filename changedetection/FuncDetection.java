@@ -66,11 +66,9 @@ public static class FuncDetection {
      * @param current
      */
     public static void detectFunctions(String origin, String current) {
+        origin = origin.toLowerCase();
+        current = current.toLowerCase();
         String diff = difference(origin, current);
-
-    /* We can find functions and their uses by finding non reserved words followed by ' (' or '('
-    then we can add these functions to an arraylist to be further analyzed.
-     */
 
         // Add Vanilla Javas reserved words to our List
         reserved.add("abstract");
@@ -128,6 +126,9 @@ public static class FuncDetection {
         reserved.add("volatile");
 
         // Get reserved words for installed plugins and libraries
+        // getReservedLibraries call
+
+
 
     }
 
