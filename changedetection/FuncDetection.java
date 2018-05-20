@@ -1,5 +1,10 @@
 import com.sun.deploy.util.StringUtils;
 
+/*
+Notes: Have someone write code to give only the code within the first set of curly brackets for detectiing functions
+it will then be very unlikely to have duplicates and reserved words.
+ */
+
 List<String>reserved=new ArrayList()<>;
 
 public static class FuncDetection {
@@ -33,7 +38,7 @@ public static class FuncDetection {
      *
      * @return List<String> of the reserved words for our libraries
      */
-    public static List<String> getReservedLibraries(List<String> libraries){
+    public static List<String> getReservedLibraries(List<String> libraries) {
         return null;
     }
 
@@ -130,6 +135,14 @@ public static class FuncDetection {
 
         List<int> checkedIndices = new ArrayList<>();
 
+        int i = 0;
+        for (diff:
+             Char c) {
+            if(c == '('){
+                checkedIndices.add(i);
+            }
+            i++;
+        }
 
 
     }
