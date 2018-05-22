@@ -134,6 +134,7 @@ public static class FuncDetection {
         // getReservedLibraries call
 
         List<int> checkedIndices = new ArrayList<>();
+        List<String> functionByName = new ArrayList<>();
 
         int i = 0;
         for (diff:
@@ -143,6 +144,9 @@ public static class FuncDetection {
             }
             i++;
         }
+
+        // Here we need to go to the first word before the indices and then grab the function and add to our function
+        // list iff it is not reserved
 
 
     }
