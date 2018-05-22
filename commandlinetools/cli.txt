@@ -1,2 +1,11 @@
-Command Line Interface
-======================
+Files here are for interacting with Git and the shell .  .  .
+
+The Process:
+
+When the user types ./augit (or potentially git commit -a?) they will initiate an automatic commit --> next we grab the
+
+current head and the to be committed .java files and get them as plaintext using Ellens functions --> next we run them
+
+through Khoris change detection methods and generate the necessary commit message (flags like -f fo function message are
+
+an option) --> finally we have our shell cript or C program call git commit -m with the automatically generated message
