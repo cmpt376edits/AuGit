@@ -7,7 +7,7 @@ it will then be very unlikely to have duplicates and reserved words.
 
 List<String>reserved=new ArrayList()<>;
 
-public static class FuncDetection {
+public static class FunctionDetection {
 
     /**
      * Returns a substring of the second string from the point where
@@ -134,7 +134,7 @@ public static class FuncDetection {
         // getReservedLibraries call
 
         List<int> checkedIndices = new ArrayList<>();
-        List<String> functionByName = new ArrayList<>();
+        List<FunctionDescription> functionByName = new ArrayList<>();
 
         int i = 0;
         for (diff:
