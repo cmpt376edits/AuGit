@@ -147,6 +147,12 @@ public static class FunctionDetection {
 
         // Here we need to go to the first word before the indices and then grab the function and add to our function
         // list iff it is not reserved
+        
+        for(:){
+            // Grabbing the words before each indice
+            
+            // Move Down and create the agruments
+        }
 
 
     }
