@@ -149,11 +149,15 @@ public static class FunctionDetection {
         // list iff it is not reserved
         
         for(:){
+            List<String> arguments = new ArrayList<>();
+            
             // Grab the return valued and access modifier
             
             // Grabbing the words before each indice
             
             // Move Down and create the agruments
+            
+            // Create new function description and add it to array
         }
 
 
