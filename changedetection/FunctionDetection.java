@@ -158,6 +158,8 @@ public static class FunctionDetection {
             // Move Down and create the agruments
             
             // Create new function description and add it to array
+            
+            // This needs to be called on preformatted code within the outer { brackets } so that it is primarily variables and method names
         }
 
 
