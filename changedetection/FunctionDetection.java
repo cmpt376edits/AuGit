@@ -76,6 +76,7 @@ public static class FunctionDetection {
         String diff = difference(origin, current);
 
         // Add Vanilla Javas reserved words to our List
+        // Detect Java Version for these?
         reserved.add("abstract");
         reserved.add("assert");
         reserved.add("boolean");
