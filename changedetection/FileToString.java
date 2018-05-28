@@ -29,7 +29,7 @@ public class FileToString {
     }
 
     public static void main(String[] args) {
-        String filePath = "/Users/Reece/Ellen's stuff/Projects/AuGit/changedetection/FunctionDescription.java";
+        String filePath = "/* Bring up Dialog Potentially to get file or use cwd */";
         String res = convertToString(filePath);
         System.out.println(res);
     }
