@@ -31,6 +31,5 @@ public class FileToString {
     public static void main(String[] args) {
         String filePath = "/* Bring up Dialog Potentially to get file or use cwd */";
         String res = convertToString(filePath);
-        System.out.println(res);
     }
 }
