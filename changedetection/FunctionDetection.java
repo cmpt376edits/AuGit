@@ -168,7 +168,7 @@ public static class FunctionDetection {
 
     }
 
-    public static String getMessage(ArrayList<FunctionDescription> functionDescriptions) {
+    public static String getMessageFunctions(ArrayList<FunctionDescription> functionDescriptions) {
         StringBuilder message = new StringBuilder();
 
         for (int i = 0; i < functionDescriptions.size(); i++) {
@@ -195,6 +195,10 @@ public static class FunctionDetection {
 
         System.out.println(message.toString());
         return "";
+    }
+    
+        public static String getMessageClasses(ArrayList<ClassDescription> classDescriptions) {
+        /* Generate a message for classes, use getMessageFunctions */
     }
 
     public static void main(String[] args) {
