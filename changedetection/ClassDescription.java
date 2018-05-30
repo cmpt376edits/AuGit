@@ -20,11 +20,11 @@ public class ClassDescription {
     this.numFunctions = numFunctions;
   }
 
-  public ArrayList<String> getFunctions() {
+  public ArrayList<FunctionDescription> getFunctions() {
     return args;
   }
 
-  public void setFunctions(ArrayList<String> functions) {
+  public void setFunctions(ArrayList<FunctionDescription> functions) {
     this.functions = functions;
   }
 
@@ -39,9 +39,9 @@ public class ClassDescription {
   private String accessModifier;
   private String className;
   private int numFunctions;
-  private ArrayList<String> functions;
+  private ArrayList<FunctionDescription> functions;
   
-  public FunctionDescription(String functionName, int numArgs, ArrayList<String> args, String modifier) {
+  public FunctionDescription(String functionName, int numArgs, ArrayList<FunctionDescription> args, String modifier) {
     this.className = className;
     this.numFunctions = numFunctions;
     this.functions = functions;
