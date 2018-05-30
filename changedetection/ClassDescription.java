@@ -21,7 +21,7 @@ public class ClassDescription {
   }
 
   public ArrayList<FunctionDescription> getFunctions() {
-    return args;
+    return functions;
   }
 
   public void setFunctions(ArrayList<FunctionDescription> functions) {
