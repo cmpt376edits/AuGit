@@ -7,3 +7,5 @@ Take a commit and the branches previous head --> find the difference using Khori
 between the two strings --> using function detection code to create a list of function objects in our List --> detect arguments
 
 and return types and add them to the function objects
+
+As of May 31, several Kotlin Files have been converted over from Java. The only Kotlin file I do not plan to use immediately is FileToString.kt
