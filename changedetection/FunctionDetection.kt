@@ -1,7 +1,8 @@
 // TODO Add Unittest, Consider incorporating Javadoc
 
-import com.sun.deploy.util.StringUtils/*
-Notes: Have someone write code to give only the code within the first set of curly brackets for detectiing functions
+import com.sun.deploy.util.StringUtils
+/*
+Notes: Have someone write code to give only the code within the first set of curly brackets for detecting functions
 it will then be very unlikely to have duplicates and reserved words.
  */
 
