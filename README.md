@@ -11,3 +11,7 @@ AuGit will debut with support for Java however we intend to expand support to Py
 # Simplifying Project Onboarding, Documentation, and Code Summary.
 
 One of the most challengin aspects of developing software is onboarding new team members with good documentation and summaries for current classes. AuGit allows for automatic generation of such documentation and summaries from any Java code/ project legacy or not.
+
+# Note
+
+Plans have shifted to try and write most of AuGit in Kotlin rather than Java as of May 30 2018.
