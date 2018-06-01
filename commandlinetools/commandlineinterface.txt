@@ -9,3 +9,6 @@ current head and the to be committed .java files and get them as plaintext using
 through Khoris change detection methods and generate the necessary commit message (flags like -f fo function message are
 
 an option) --> finally we have our shell cript or C program call git commit -m with the automatically generated message
+
+
+Notes: Need to figure out how the "frontend" (C lol) will integrate with the Kotlin/Java backend.
