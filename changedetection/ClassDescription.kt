@@ -1,4 +1,4 @@
-// TODO add javadoc, and unittest
+// TODO add unittest, research Kotlin Test Frameworks
 
 import java.util.ArrayList
 
