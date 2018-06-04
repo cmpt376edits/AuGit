@@ -1,4 +1,4 @@
-// TODO Add Unittest, Consider incorporating Javadoc
+// TODO add unittest, research Kotlin Test Frameworks
 
 import com.sun.deploy.util.StringUtils
 /*
