@@ -8,7 +8,7 @@ Not only will AuGit allow for generating smart commit messages, but with AuGit C
 
 # Simplifying Project Onboarding, Documentation, and Code Summary.
 
-One of the most challenging aspects of developing software is onboarding new team members with good documentation and summaries for current classes. AuGit allows for automatic generation of such documentation and summaries from any Java code/ project legacy or not.
+One of the most challenging aspects of developing software is onboarding new team members with good documentation and summaries for current classes. AuGit allows for automatic generation of such documentation and summaries from any Java code/ project legacy or not. This allows for succint summaries to be built directly from code wihout any extra efforts from development teams.
 
 # Note
 
