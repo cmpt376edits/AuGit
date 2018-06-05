@@ -158,7 +158,6 @@ public static class javaDetector {
             
             int curIndex = x;
             // Grab the return valued and access modifier
-            while(curIndex)
             
             // Grabbing the words before each indice
             
