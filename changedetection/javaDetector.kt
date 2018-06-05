@@ -1,4 +1,6 @@
-// TODO add unittest, research Kotlin Test Frameworks
+// TODO (rmartin) add unittest, research Kotlin Test Frameworks
+
+// TODO (rmartin) reconcile this with the current java equivalent file
 
 import com.sun.deploy.util.StringUtils
 /*
