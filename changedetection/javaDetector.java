@@ -142,6 +142,8 @@ public static class javaDetector {
         int i = 0;
         for (diff:
              Char c) {
+            
+            // TODO (rmartin) turn this into a regex where the bracket needs to be lead by a char
             if(c == '('){
                 checkedIndices.add(i);
             }
@@ -151,10 +153,12 @@ public static class javaDetector {
         // Here we need to go to the first word before the indices and then grab the function and add to our function
         // list iff it is not reserved
         
-        for(:){
+        for(int x: checkedIndices){
             List<String> arguments = new ArrayList<>();
             
+            int curIndex = x;
             // Grab the return valued and access modifier
+            while(curIndex)
             
             // Grabbing the words before each indice
             
