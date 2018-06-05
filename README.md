@@ -10,6 +10,10 @@ Not only will AuGit allow for generating smart commit messages, but with AuGit C
 
 One of the most challenging aspects of developing software is onboarding new team members with good documentation and summaries for current classes. AuGit allows for automatic generation of such documentation and summaries from any Java code/ project legacy or not. This allows for succint summaries to be built directly from code wihout any extra efforts from development teams.
 
+# Project Plans
+
+In order to turn AuGit into software that people really want to use its important to constantly further development, currently my plan calls to have Java compatibility completed by the end of July, Python by September, and C by November.
+
 # Note
 
 Plans have shifted to try and write most of AuGit in Kotlin rather than Java as of May 30 2018.
