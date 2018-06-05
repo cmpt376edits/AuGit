@@ -6,7 +6,7 @@ Notes: Have someone write code to give only the code within the first set of cur
 it will then be very unlikely to have duplicates and reserved words.
  */
 
-object FunctionDetection {
+object javaDetector {
 
     /**
      * Returns a substring of the second string from the point where
