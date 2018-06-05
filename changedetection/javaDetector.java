@@ -9,7 +9,7 @@ it will then be very unlikely to have duplicates and reserved words.
 
 List<String>reserved=new ArrayList()<>;
 
-public static class FunctionDetection {
+public static class javaDetector {
 
     /**
      * Returns a substring of the second string from the point where
