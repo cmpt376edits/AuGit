@@ -17,3 +17,6 @@ In order to turn AuGit into software that people really want to use its importan
 # Note
 
 Plans have shifted to try and write most of AuGit in Kotlin rather than Java as of May 30 2018.
+
+# Contact
+For any questions please contact reece.martin@mail.utoronto.ca
