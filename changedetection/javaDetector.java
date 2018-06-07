@@ -158,6 +158,10 @@ public static class javaDetector {
             
             int curIndex = x;
             // Grab the return valued and access modifier
+            while(curIndex >0 && diff.charAt(curIndex) != ' '){
+                curIndex--; 
+            }
+            // curIndex -> x is the functions name
             
             // Grabbing the words before each indice
             
