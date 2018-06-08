@@ -155,6 +155,8 @@ public static class javaDetector {
         
         for(int x: checkedIndices){
             String name = "";
+            String accessMod = "";
+            String retType = "";
             List<String> arguments = new ArrayList<>();
             
             int curIndex = x;
@@ -164,6 +166,8 @@ public static class javaDetector {
             }
             name = diff.substring(curIndex, x);
             // curIndex -> x is the functions name
+            
+            // Grab return type and accessMod
             
             // Grabbing the words before each indice
             
