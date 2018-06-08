@@ -36,9 +36,13 @@ public class FunctionDescription {
     this.retType = retType;
   }
   
-  // Getter
-  
-  // Setter
+  public String getAccessMod() {
+    return accessMod;
+  }
+
+  public void setAccessMod(String accessMod) {
+    this.accessMod = accessMod;
+  }
 
   private String retType;
   private String functionName;
@@ -47,11 +51,11 @@ public class FunctionDescription {
   // Access Modifier
   
   // May need to expand definition to include access rights etc.
-  public FunctionDescription(String functionName, int numArgs, ArrayList<String> args, String retType, /* Added access modifier*/) {
+  public FunctionDescription(String functionName, int numArgs, ArrayList<String> args, String retType, String accessMod) {
     this.functionName = functionName;
     this.numArgs = numArgs;
     this.args = args;
     this.retType = retType;
-    // Access Modifier
+    this.accessMod = accessMod;
   }
 }
