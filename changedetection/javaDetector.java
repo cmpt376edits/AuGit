@@ -154,6 +154,7 @@ public static class javaDetector {
         // list iff it is not reserved
         
         for(int x: checkedIndices){
+            String name = "";
             List<String> arguments = new ArrayList<>();
             
             int curIndex = x;
@@ -161,6 +162,7 @@ public static class javaDetector {
             while(curIndex >0 && diff.charAt(curIndex) != ' '){
                 curIndex--; 
             }
+            name = diff.substring(curIndex, x);
             // curIndex -> x is the functions name
             
             // Grabbing the words before each indice
