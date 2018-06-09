@@ -2,10 +2,9 @@ import java.util.ArrayList;
 
 public interface Detector {
 
-void detectFunctions(String origin, String current);
+  void detectFunctions(String origin, String current);
 
-String getMessageFunctionsJava(ArrayList<FunctionDescription> functionDescriptions);
+  String getMessageFunctionsJava(ArrayList<FunctionDescription> functionDescriptions);
 
-String getMessageClassesJava(ArrayList<ClassDescription> classDescriptions);
-
+  String getMessageClassesJava(ArrayList<ClassDescription> classDescriptions);
 }
