@@ -1,15 +1,16 @@
 // TODO Add Unittest, Consider incorporating Javadoc
 
-import com.sun.deploy.util.StringUtils;
+import java.util.ArrayList;
+import java.util.List;
 
 /*
-Notes: Have someone write code to give only the code within the first set of curly brackets for detectiing functions
+Notes: Have someone write code to give only the code within the first set of curly brackets for detecting functions
 it will then be very unlikely to have duplicates and reserved words.
  */
 
-List<String>reserved=new ArrayList()<>;
+public class javaDetector {
 
-public static class javaDetector {
+    public List<String>reserved=new ArrayList();
 
     /**
      * Returns a substring of the second string from the point where
@@ -136,15 +137,13 @@ public static class javaDetector {
         // Get reserved words for installed plugins and libraries
         // getReservedLibraries call
 
-        List<int> checkedIndices = new ArrayList<>();
+        List checkedIndices = new ArrayList();
         List<FunctionDescription> functionByName = new ArrayList<>();
 
-        int i = 0;
-        for (diff:
-             Char c) {
+        for (int i = 0;i< diff.length(); i++) {
             
             // TODO (rmartin) turn this into a regex where the bracket needs to be lead by a char
-            if(c == '('){
+            if(diff.charAt(i) == '('){
                 checkedIndices.add(i);
             }
             i++;
@@ -153,7 +152,7 @@ public static class javaDetector {
         // Here we need to go to the first word before the indices and then grab the function and add to our function
         // list iff it is not reserved
         
-        for(int x: checkedIndices){
+        for(int i = 0; i < checkedIndices.size(); i++){
             String name = "";
             String accessMod = "";
             String retType = "";
@@ -223,7 +222,7 @@ public static class javaDetector {
 
         ArrayList<FunctionDescription> fun = new ArrayList<>();
         fun.add(test);
-        getMessage(fun);
+        getMessageFunctions(fun);
 
     }
 }
