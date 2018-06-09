@@ -8,7 +8,7 @@ Notes: Have someone write code to give only the code within the first set of cur
 it will then be very unlikely to have duplicates and reserved words.
  */
 
-public class JavaDetector extends DetectorImpl {
+public class JavaDetectorImpl extends DetectorImpl {
 
   private List<String> reserved = new ArrayList();
 
@@ -170,7 +170,7 @@ public class JavaDetector extends DetectorImpl {
 
   public static void main(String[] args) {
     ArrayList<String> arguments = new ArrayList<>();
-    JavaDetector j = new JavaDetector();
+    JavaDetectorImpl j = new JavaDetectorImpl();
     arguments.add("String name");
     arguments.add("int Time");
     FunctionDescription test =
