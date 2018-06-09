@@ -169,6 +169,7 @@ public class JavaDetector extends DetectorImpl {
 
   public static void main(String[] args) {
     ArrayList<String> arguments = new ArrayList<>();
+    JavaDetector j = new JavaDetector();
     arguments.add("String name");
     arguments.add("int Time");
     FunctionDescription test =
@@ -176,6 +177,6 @@ public class JavaDetector extends DetectorImpl {
 
     ArrayList<FunctionDescription> fun = new ArrayList<>();
     fun.add(test);
-    getMessageFunctionsJava(fun);
+    j.getMessageFunctionsJava(fun);
   }
 }
