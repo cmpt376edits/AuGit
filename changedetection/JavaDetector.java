@@ -132,7 +132,7 @@ public class JavaDetector extends DetectorImpl {
     }
   }
 
-  public static String getMessageFunctions(ArrayList<FunctionDescription> functionDescriptions) {
+  public String getMessageFunctionsJava(ArrayList<FunctionDescription> functionDescriptions) {
     StringBuilder message = new StringBuilder();
 
     for (int i = 0; i < functionDescriptions.size(); i++) {
@@ -162,7 +162,7 @@ public class JavaDetector extends DetectorImpl {
   }
 
   public static String getMessageClasses(ArrayList<ClassDescription> classDescriptions) {
-    /* Generate a message for classes, use getMessageFunctions */
+    /* Generate a message for classes, use getMessageFunctionsJava */
 
     return "";
   }
@@ -176,6 +176,6 @@ public class JavaDetector extends DetectorImpl {
 
     ArrayList<FunctionDescription> fun = new ArrayList<>();
     fun.add(test);
-    getMessageFunctions(fun);
+    getMessageFunctionsJava(fun);
   }
 }
