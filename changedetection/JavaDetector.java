@@ -161,7 +161,7 @@ public class JavaDetector extends DetectorImpl {
     return "";
   }
 
-  public static String getMessageClasses(ArrayList<ClassDescription> classDescriptions) {
+  public String getMessageClassesJava(ArrayList<ClassDescription> classDescriptions) {
     /* Generate a message for classes, use getMessageFunctionsJava */
 
     return "";

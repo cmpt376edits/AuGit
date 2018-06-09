@@ -6,4 +6,6 @@ void detectFunctions(String origin, String current);
 
 String getMessageFunctionsJava(ArrayList<FunctionDescription> functionDescriptions);
 
+String getMessageClassesJava(ArrayList<ClassDescription> classDescriptions);
+
 }
