@@ -10,7 +10,7 @@ it will then be very unlikely to have duplicates and reserved words.
 
 public class JavaDetector extends DetectorImpl {
 
-  public List<String> reserved = new ArrayList();
+  private List<String> reserved = new ArrayList();
 
   /**
    * TODO Finish this function
@@ -22,16 +22,17 @@ public class JavaDetector extends DetectorImpl {
   }
 
   /**
-   * @param origin
-   * @param current
+   * @param origin The previous code
+   * @param current The current code
    */
   public void detectFunctions(String origin, String current) {
     origin = origin.toLowerCase();
     current = current.toLowerCase();
     String diff = difference(origin, current);
 
-    // Add Vanilla Javas reserved words to our List
-    // Detect Java Version for these?
+    // TODO Add Vanilla Javas reserved words to our List
+    // TODO Detect Java Version for these?
+    // TODO make sure to check we arent adding these
     reserved.add("abstract");
     reserved.add("assert");
     reserved.add("boolean");
@@ -135,20 +136,20 @@ public class JavaDetector extends DetectorImpl {
   public String getMessageFunctionsJava(ArrayList<FunctionDescription> functionDescriptions) {
     StringBuilder message = new StringBuilder();
 
-    for (int i = 0; i < functionDescriptions.size(); i++) {
+    for (FunctionDescription functionDescription : functionDescriptions) {
       message.append("Created function ");
-      if (functionDescriptions.get(i).getRetType().equals("void")) {
+      if (functionDescription.getRetType().equals("void")) {
         message.append("with void return type, called ");
       } else {
         message.append("with ");
-        message.append(functionDescriptions.get(i).getRetType());
+        message.append(functionDescription.getRetType());
         message.append(" return type, called ");
       }
-      message.append(functionDescriptions.get(i).getFunctionName());
+      message.append(functionDescription.getFunctionName());
       message.append(" and arguments as follows: ");
-      for (int j = 0; j < functionDescriptions.get(i).getArgs().size(); j++) {
-        message.append(functionDescriptions.get(i).getArgs().get(j));
-        if (j + 1 == functionDescriptions.get(i).getArgs().size()) {
+      for (int j = 0; j < functionDescription.getArgs().size(); j++) {
+        message.append(functionDescription.getArgs().get(j));
+        if (j + 1 == functionDescription.getArgs().size()) {
 
         } else {
           message.append(", ");
