@@ -73,7 +73,7 @@ public class javaDetector {
      * @param origin
      * @param current
      */
-    public static void detectFunctions(String origin, String current) {
+    public void detectFunctions(String origin, String current) {
         origin = origin.toLowerCase();
         current = current.toLowerCase();
         String diff = difference(origin, current);
@@ -151,29 +151,29 @@ public class javaDetector {
 
         // Here we need to go to the first word before the indices and then grab the function and add to our function
         // list iff it is not reserved
-        
-        for(int i = 0; i < checkedIndices.size(); i++){
+
+        for (Object checkedIndice : checkedIndices) {
             String name = "";
             String accessMod = "";
             String retType = "";
             List<String> arguments = new ArrayList<>();
-            
-            int curIndex = x;
+
+            int curIndex = (int) checkedIndice;
             // Grab the return valued and access modifier
-            while(curIndex >0 && diff.charAt(curIndex) != ' '){
-                curIndex--; 
+            while (curIndex > 0 && diff.charAt(curIndex) != ' ') {
+                curIndex--;
             }
-            name = diff.substring(curIndex, x);
+            name = diff.substring(curIndex, (int) checkedIndice);
             // curIndex -> x is the functions name
-            
+
             // Grab return type and accessMod
-            
+
             // Grabbing the words before each indice
-            
+
             // Move Down and create the agruments
-            
+
             // Create new function description and add it to array
-            
+
             // This needs to be called on preformatted code within the outer { brackets } so that it is primarily variables and method names
         }
 
@@ -211,13 +211,15 @@ public class javaDetector {
     
         public static String getMessageClasses(ArrayList<ClassDescription> classDescriptions) {
         /* Generate a message for classes, use getMessageFunctions */
+
+            return "";
     }
 
     public static void main(String[] args) {
-        ArrayList<String> argu = new ArrayList<>();
-        argu.add("String name");
-        argu.add("int Time");
-        FunctionDescription test = new FunctionDescription("randomFunction", 2, argu, "Object");
+        ArrayList<String> arguments = new ArrayList<>();
+        arguments.add("String name");
+        arguments.add("int Time");
+        FunctionDescription test = new FunctionDescription("randomFunction", 2, arguments, "Object", "private");
 
 
         ArrayList<FunctionDescription> fun = new ArrayList<>();
