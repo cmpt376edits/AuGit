@@ -1,4 +1,4 @@
-// TODO Add Unittest, Consider incorporating Javadoc
+// TODO (rmartin) Add Unittest, Consider incorporating Javadoc
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,12 +8,12 @@ Notes: Have someone write code to give only the code within the first set of cur
 it will then be very unlikely to have duplicates and reserved words.
  */
 
-public class JavaDetector extends DetectorImpl {
+public class JavaDetectorImpl extends DetectorImpl {
 
-  public List<String> reserved = new ArrayList();
+  private List<String> reserved = new ArrayList();
 
   /**
-   * TODO Finish this function
+   * TODO (rmartin) Finish this function
    *
    * @return List<String> of the reserved words for our libraries
    */
@@ -22,16 +22,17 @@ public class JavaDetector extends DetectorImpl {
   }
 
   /**
-   * @param origin
-   * @param current
+   * @param origin The previous code
+   * @param current The current code
    */
   public void detectFunctions(String origin, String current) {
     origin = origin.toLowerCase();
     current = current.toLowerCase();
     String diff = difference(origin, current);
 
-    // Add Vanilla Javas reserved words to our List
-    // Detect Java Version for these?
+    // TODO (rmartin) Add Vanilla Javas reserved words to our List
+    // TODO (rmartin) Detect Java Version for these?
+    // TODO (rmartin) make sure to check we arent adding these
     reserved.add("abstract");
     reserved.add("assert");
     reserved.add("boolean");
@@ -132,23 +133,27 @@ public class JavaDetector extends DetectorImpl {
     }
   }
 
-  public static String getMessageFunctions(ArrayList<FunctionDescription> functionDescriptions) {
+  public void detectClasses(String origin, String current){
+    // TODO (rmartin) Write this function
+  }
+
+  public String getMessageFunctionsJava(ArrayList<FunctionDescription> functionDescriptions) {
     StringBuilder message = new StringBuilder();
 
-    for (int i = 0; i < functionDescriptions.size(); i++) {
+    for (FunctionDescription functionDescription : functionDescriptions) {
       message.append("Created function ");
-      if (functionDescriptions.get(i).getRetType().equals("void")) {
+      if (functionDescription.getRetType().equals("void")) {
         message.append("with void return type, called ");
       } else {
         message.append("with ");
-        message.append(functionDescriptions.get(i).getRetType());
+        message.append(functionDescription.getRetType());
         message.append(" return type, called ");
       }
-      message.append(functionDescriptions.get(i).getFunctionName());
+      message.append(functionDescription.getFunctionName());
       message.append(" and arguments as follows: ");
-      for (int j = 0; j < functionDescriptions.get(i).getArgs().size(); j++) {
-        message.append(functionDescriptions.get(i).getArgs().get(j));
-        if (j + 1 == functionDescriptions.get(i).getArgs().size()) {
+      for (int j = 0; j < functionDescription.getArgs().size(); j++) {
+        message.append(functionDescription.getArgs().get(j));
+        if (j + 1 == functionDescription.getArgs().size()) {
 
         } else {
           message.append(", ");
@@ -161,14 +166,15 @@ public class JavaDetector extends DetectorImpl {
     return "";
   }
 
-  public static String getMessageClasses(ArrayList<ClassDescription> classDescriptions) {
-    /* Generate a message for classes, use getMessageFunctions */
+  public String getMessageClassesJava(ArrayList<ClassDescription> classDescriptions) {
+    /* Generate a message for classes, use getMessageFunctionsJava */
 
     return "";
   }
 
   public static void main(String[] args) {
     ArrayList<String> arguments = new ArrayList<>();
+    JavaDetectorImpl j = new JavaDetectorImpl();
     arguments.add("String name");
     arguments.add("int Time");
     FunctionDescription test =
@@ -176,6 +182,6 @@ public class JavaDetector extends DetectorImpl {
 
     ArrayList<FunctionDescription> fun = new ArrayList<>();
     fun.add(test);
-    getMessageFunctions(fun);
+    j.getMessageFunctionsJava(fun);
   }
 }
