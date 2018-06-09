@@ -1,4 +1,4 @@
-// TODO Add Unittest, Consider incorporating Javadoc
+// TODO (rmartin) Add Unittest, Consider incorporating Javadoc
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ public class JavaDetectorImpl extends DetectorImpl {
   private List<String> reserved = new ArrayList();
 
   /**
-   * TODO Finish this function
+   * TODO (rmartin) Finish this function
    *
    * @return List<String> of the reserved words for our libraries
    */
@@ -30,9 +30,9 @@ public class JavaDetectorImpl extends DetectorImpl {
     current = current.toLowerCase();
     String diff = difference(origin, current);
 
-    // TODO Add Vanilla Javas reserved words to our List
-    // TODO Detect Java Version for these?
-    // TODO make sure to check we arent adding these
+    // TODO (rmartin) Add Vanilla Javas reserved words to our List
+    // TODO (rmartin) Detect Java Version for these?
+    // TODO (rmartin) make sure to check we arent adding these
     reserved.add("abstract");
     reserved.add("assert");
     reserved.add("boolean");
@@ -134,7 +134,7 @@ public class JavaDetectorImpl extends DetectorImpl {
   }
 
   public void detectClasses(String origin, String current){
-    // TODO Write this function
+    // TODO (rmartin) Write this function
   }
 
   public String getMessageFunctionsJava(ArrayList<FunctionDescription> functionDescriptions) {
