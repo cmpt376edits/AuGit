@@ -48,9 +48,8 @@ public class FunctionDescription {
   private String functionName;
   private int numArgs;
   private ArrayList<String> args;
-  // Access Modifier
+  private String accessMod;
 
-  // May need to expand definition to include access rights etc.
   public FunctionDescription(
       String functionName, int numArgs, ArrayList<String> args, String retType, String accessMod) {
     this.functionName = functionName;
