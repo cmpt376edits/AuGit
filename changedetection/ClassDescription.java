@@ -29,7 +29,7 @@ public class ClassDescription {
   }
 
   public String getAccessModifier() {
-    return retType;
+    return this.accessModifier;
   }
 
   public void setAccessModifier(String modifier) {
@@ -41,8 +41,8 @@ public class ClassDescription {
   private int numFunctions;
   private ArrayList<FunctionDescription> functions;
 
-  public FunctionDescription(
-      String functionName, int numArgs, ArrayList<FunctionDescription> args, String modifier) {
+  public ClassDescription(
+      String className, int numArgs, ArrayList<FunctionDescription> args, String modifier) {
     this.className = className;
     this.numFunctions = numFunctions;
     this.functions = functions;
