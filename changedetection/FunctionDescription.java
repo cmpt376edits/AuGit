@@ -35,7 +35,7 @@ public class FunctionDescription {
   public void setRetType(String retType) {
     this.retType = retType;
   }
-  
+
   public String getAccessMod() {
     return accessMod;
   }
@@ -49,9 +49,10 @@ public class FunctionDescription {
   private int numArgs;
   private ArrayList<String> args;
   // Access Modifier
-  
+
   // May need to expand definition to include access rights etc.
-  public FunctionDescription(String functionName, int numArgs, ArrayList<String> args, String retType, String accessMod) {
+  public FunctionDescription(
+      String functionName, int numArgs, ArrayList<String> args, String retType, String accessMod) {
     this.functionName = functionName;
     this.numArgs = numArgs;
     this.args = args;

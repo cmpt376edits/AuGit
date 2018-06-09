@@ -40,11 +40,12 @@ public class ClassDescription {
   private String className;
   private int numFunctions;
   private ArrayList<FunctionDescription> functions;
-  
-  public FunctionDescription(String functionName, int numArgs, ArrayList<FunctionDescription> args, String modifier) {
+
+  public FunctionDescription(
+      String functionName, int numArgs, ArrayList<FunctionDescription> args, String modifier) {
     this.className = className;
     this.numFunctions = numFunctions;
     this.functions = functions;
-    this.accessMdifier = modifier;
+    this.accessModifier = modifier;
   }
 }
