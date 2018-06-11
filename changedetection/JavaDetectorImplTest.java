@@ -1,4 +1,5 @@
 public class JavaDetectorImplTest {
+  
   @Test
   public void detectFunctionsTest(String origin, String current) {
     // Test Code Here
