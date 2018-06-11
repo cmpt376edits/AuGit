@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 
+// TODO (rmartin) add some comments
+
 public interface Detector {
 
   void detectFunctions(String origin, String current);
