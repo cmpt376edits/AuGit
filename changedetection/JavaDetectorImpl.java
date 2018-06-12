@@ -131,7 +131,11 @@ public class JavaDetectorImpl extends DetectorImpl {
   }
 
   public void detectClasses(String origin, String current){
-    // TODO (rmartin) Write this function
+    StringBuilder message = new StringBuilder();
+    
+    for (ClassDescription classDescription : classDescriptions) {
+      // Message Logic
+    }
   }
 
   public String getMessageFunctionsJava(ArrayList<FunctionDescription> functionDescriptions) {
