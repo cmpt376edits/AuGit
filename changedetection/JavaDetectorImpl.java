@@ -119,7 +119,7 @@ public class JavaDetectorImpl extends DetectorImpl {
       lastLoc = curIndex - 1;
       name = diff.substring(curIndex, (int) checkedIndice);
       
-      // Return Value and Access Modifier
+      // Return Value
       while (curIndex > 0 && diff.charAt(curIndex) != ' ') {
         curIndex--;
       }
