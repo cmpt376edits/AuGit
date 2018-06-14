@@ -110,12 +110,21 @@ public class JavaDetectorImpl extends DetectorImpl {
       List<String> arguments = new ArrayList<>();
 
       int curIndex = (int) checkedIndice;
-      // Grab the return valued and access modifier
+      int lastLoc = 0;
+      
+      // Function Name
       while (curIndex > 0 && diff.charAt(curIndex) != ' ') {
         curIndex--;
       }
+      lastLoc = curIndex - 1;
       name = diff.substring(curIndex, (int) checkedIndice);
-      // curIndex -> x is the functions name
+      
+      // Return Value and Access Modifier
+      while (curIndex > 0 && diff.charAt(curIndex) != ' ') {
+        curIndex--;
+      }
+      name = diff.substring(curIndex, (lastLoc);
+      lastLoc = curIndex - 1;
 
       // Grab return type and accessMod
 
