@@ -124,7 +124,7 @@ public class JavaDetectorImpl extends DetectorImpl {
       while (curIndex > 0 && diff.charAt(curIndex) != ' ') {
         curIndex--;
       }
-      name = diff.substring(curIndex, (lastLoc);
+      retType = diff.substring(curIndex, (lastLoc);
       lastLoc = curIndex - 1;
                             
       // Static (boolean)
@@ -135,9 +135,14 @@ public class JavaDetectorImpl extends DetectorImpl {
       stat = diff.substring(curIndex, (int) checkedIndice).contains("static");
                             
       if (stat) {
-        
+        // Access Modifer
+        while (curIndex > 0 && diff.charAt(curIndex) != ' ') {
+          curIndex--;
+        }
+        accessMod = diff.substring(curIndex, (lastLoc);
+        lastLoc = curIndex - 1;
       } else {
-        
+        accessMod = diff.substring(curIndex, (int) checkedIndice);
       }
 
       // Grab return type and accessMod
