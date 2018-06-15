@@ -107,6 +107,7 @@ public class JavaDetectorImpl extends DetectorImpl {
       String name = "";
       String accessMod = "";
       String retType = "";
+      boolean stat = false;
       List<String> arguments = new ArrayList<>();
 
       int curIndex = (int) checkedIndice;
