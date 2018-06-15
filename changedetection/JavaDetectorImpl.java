@@ -135,6 +135,7 @@ public class JavaDetectorImpl extends DetectorImpl {
       stat = diff.substring(curIndex, (int) checkedIndice).contains("static");
                             
       if (stat) {
+        // Function is Static
         // Access Modifer
         while (curIndex > 0 && diff.charAt(curIndex) != ' ') {
           curIndex--;
@@ -142,19 +143,12 @@ public class JavaDetectorImpl extends DetectorImpl {
         accessMod = diff.substring(curIndex, (lastLoc);
         lastLoc = curIndex - 1;
       } else {
+        // Function isn't Static
+        // Access Modifer
         accessMod = diff.substring(curIndex, (int) checkedIndice);
       }
 
-      // Grab return type and accessMod
-
-      // Grabbing the words before each indice
-
-      // Move Down and create the agruments
-
-      // Create new function description and add it to array
-
-      // This needs to be called on preformatted code within the outer { brackets } so that it is
-      // primarily variables and method names
+      
     }
   }
 
