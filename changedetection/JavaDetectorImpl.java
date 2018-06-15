@@ -125,6 +125,13 @@ public class JavaDetectorImpl extends DetectorImpl {
       }
       name = diff.substring(curIndex, (lastLoc);
       lastLoc = curIndex - 1;
+                            
+      // Static (boolean)
+      while (curIndex > 0 && diff.charAt(curIndex) != ' ') {
+        curIndex--;
+      }
+      lastLoc = curIndex - 1;
+      name = diff.substring(curIndex, (int) checkedIndice);
 
       // Grab return type and accessMod
 
