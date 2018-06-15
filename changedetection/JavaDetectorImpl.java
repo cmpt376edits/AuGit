@@ -1,4 +1,4 @@
-// TODO (rmartin) Add Unittest, Consider incorporating Javadoc
+// TODO (rmartin) Consider incorporating Javadoc
 // TODO (rmartin) Write code to give only the code within the first set of curly brackets for detecting functions
 //it will then be very unlikely to have duplicates and reserved words.
 
