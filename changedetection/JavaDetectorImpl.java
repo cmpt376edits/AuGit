@@ -132,7 +132,13 @@ public class JavaDetectorImpl extends DetectorImpl {
         curIndex--;
       }
       lastLoc = curIndex - 1;
-      name = diff.substring(curIndex, (int) checkedIndice);
+      stat = diff.substring(curIndex, (int) checkedIndice).contains("static");
+                            
+      if (stat) {
+        
+      } else {
+        
+      }
 
       // Grab return type and accessMod
 
