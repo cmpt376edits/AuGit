@@ -3,7 +3,7 @@
 import java.io.*;
 
 public class FileToString {
-  
+
   /**
    * Returns a String containing all the characters from the file at filePath, with all the newlines
    * and spaces removed.
