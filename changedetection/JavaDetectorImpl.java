@@ -186,6 +186,14 @@ public class JavaDetectorImpl extends DetectorImpl {
     this.funcDescList = funcDescList;
   }
 
+  public List<ClassDescription> getClassDescList() {
+    return classDescList;
+  }
+
+  public void setClassDescList(List<ClassDescription> classDescList) {
+    this.classDescList = classDescList;
+  }
+
   /**
    * Generates a message for summarizing the functions passed in
    *
