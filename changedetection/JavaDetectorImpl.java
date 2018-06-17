@@ -4,6 +4,7 @@
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class JavaDetectorImpl extends DetectorImpl {
 
@@ -26,11 +27,28 @@ public class JavaDetectorImpl extends DetectorImpl {
     return null;
   }
 
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    JavaDetectorImpl that = (JavaDetectorImpl) o;
+    return Objects.equals(reserved, that.reserved) &&
+            Objects.equals(funcDescList, that.funcDescList) &&
+            Objects.equals(classDescList, that.classDescList);
+  }
+
+  @Override
+  public int hashCode() {
+
+    return Objects.hash(reserved, funcDescList, classDescList);
+  }
+
   /**
    * This function detects functions and sets the funcDescList full of them
    *
    * @param origin The previous code
    * @param current The current code
+
    */
   public void detectFunctions(String origin, String current) {
     origin = origin.toLowerCase();
