@@ -155,7 +155,7 @@ public class JavaDetectorImpl extends DetectorImpl {
   public void detectClasses(String origin, String current){
     StringBuilder message = new StringBuilder();
     
-    for (ClassDescription classDescription : classDescriptions) {
+    for (ClassDescription classDescription : ) {
       // Message Logic
     }
   }
