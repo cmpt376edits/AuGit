@@ -21,7 +21,7 @@ public class JavaDetectorImpl extends DetectorImpl {
   }
 
   /**
-   * This function detects functions and sets the funcDescList to match.
+   * This function detects functions and sets the funcDescList full of them
    *
    * @param origin The previous code
    * @param current The current code
@@ -157,10 +157,10 @@ public class JavaDetectorImpl extends DetectorImpl {
   }
 
   /**
-   * This function detects classes in code and sets the classDescList full of them.
+   * This function detects classes in code and sets the classDescList full of them
    *
-   * @param origin The past code.
-   * @param current The modified code.
+   * @param origin The previous code
+   * @param current The current code
    */
   public void detectClasses(String origin, String current){
 //    StringBuilder message = new StringBuilder();
