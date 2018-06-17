@@ -17,6 +17,10 @@ public class ClassDescription {
     this.accessModifier = modifier;
   }
 
+  public String toMessage(){
+    return "";
+  }
+
   /*
 
 

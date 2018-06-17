@@ -18,7 +18,7 @@ public class FunctionDescription {
     this.retType = retType;
     this.accessMod = accessMod;
   }
-  
+
   public String toMessage(){
     return "";
   }
