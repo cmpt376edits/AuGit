@@ -19,6 +19,16 @@ public class FunctionDescription {
     this.accessMod = accessMod;
   }
 
+  /*
+
+
+
+  BOILERPLATE BELOW! Replace with Lombok . . .
+
+
+
+   */
+
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;

@@ -21,7 +21,7 @@ public class ClassDescription {
 
 
 
-  BOILERPLATE BELOW! Replace with Lombok . . . 
+  BOILERPLATE BELOW! Replace with Lombok . . .
 
 
 
