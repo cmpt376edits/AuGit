@@ -1,6 +1,7 @@
 // TODO (rmartin) Consider incorporating Javadoc
-// TODO (rmartin) Write code to give only the code within the first set of curly brackets for detecting functions
-//it will then be very unlikely to have duplicates and reserved words.
+// TODO (rmartin) Write code to give only the code within the first set of curly brackets for
+// detecting functions
+// it will then be very unlikely to have duplicates and reserved words.
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +13,10 @@ public class JavaDetectorImpl extends DetectorImpl {
   private List<FunctionDescription> funcDescList = new ArrayList();
   private List<ClassDescription> classDescList = new ArrayList();
 
-  public JavaDetectorImpl(List<String> reserved, List<FunctionDescription> funcDescList, List<ClassDescription> classDescList) {
+  public JavaDetectorImpl(
+      List<String> reserved,
+      List<FunctionDescription> funcDescList,
+      List<ClassDescription> classDescList) {
     this.reserved = reserved;
     this.funcDescList = funcDescList;
     this.classDescList = classDescList;
@@ -29,11 +33,14 @@ public class JavaDetectorImpl extends DetectorImpl {
 
   @Override
   public String toString() {
-    return "JavaDetectorImpl{" +
-            "reserved=" + reserved +
-            ", funcDescList=" + funcDescList +
-            ", classDescList=" + classDescList +
-            '}';
+    return "JavaDetectorImpl{"
+        + "reserved="
+        + reserved
+        + ", funcDescList="
+        + funcDescList
+        + ", classDescList="
+        + classDescList
+        + '}';
   }
 
   @Override
@@ -41,9 +48,9 @@ public class JavaDetectorImpl extends DetectorImpl {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
     JavaDetectorImpl that = (JavaDetectorImpl) o;
-    return Objects.equals(reserved, that.reserved) &&
-            Objects.equals(funcDescList, that.funcDescList) &&
-            Objects.equals(classDescList, that.classDescList);
+    return Objects.equals(reserved, that.reserved)
+        && Objects.equals(funcDescList, that.funcDescList)
+        && Objects.equals(classDescList, that.classDescList);
   }
 
   @Override
@@ -57,7 +64,6 @@ public class JavaDetectorImpl extends DetectorImpl {
    *
    * @param origin The previous code
    * @param current The current code
-
    */
   public void detectFunctions(String origin, String current) {
     origin = origin.toLowerCase();
@@ -149,43 +155,41 @@ public class JavaDetectorImpl extends DetectorImpl {
 
       int curIndex = (int) checkedIndice;
       int lastLoc = 0;
-      
+
       // Function Name
       while (curIndex > 0 && diff.charAt(curIndex) != ' ') {
         curIndex--;
       }
       lastLoc = curIndex - 1;
       name = diff.substring(curIndex, (int) checkedIndice);
-      
+
       // Return Value
       while (curIndex > 0 && diff.charAt(curIndex) != ' ') {
         curIndex--;
       }
-      retType = diff.substring(curIndex, (lastLoc);
+      retType = diff.substring(curIndex, (lastLoc));
       lastLoc = curIndex - 1;
-                            
+
       // Static (boolean)
       while (curIndex > 0 && diff.charAt(curIndex) != ' ') {
         curIndex--;
       }
       lastLoc = curIndex - 1;
       stat = diff.substring(curIndex, (int) checkedIndice).contains("static");
-                            
+
       if (stat) {
         // Function is Static
         // Access Modifier
         while (curIndex > 0 && diff.charAt(curIndex) != ' ') {
           curIndex--;
         }
-        accessMod = diff.substring(curIndex, (lastLoc);
+        accessMod = diff.substring(curIndex, (lastLoc));
         lastLoc = curIndex - 1;
       } else {
         // Function isn't Static
         // Access Modifier
         accessMod = diff.substring(curIndex, (int) checkedIndice);
       }
-
-      
     }
   }
 
@@ -195,12 +199,12 @@ public class JavaDetectorImpl extends DetectorImpl {
    * @param origin The previous code
    * @param current The current code
    */
-  public void detectClasses(String origin, String current){
-//    StringBuilder message = new StringBuilder();
-//
-//    for (ClassDescription classDescription : ) {
-//      // Message Logic
-//    }
+  public void detectClasses(String origin, String current) {
+    //    StringBuilder message = new StringBuilder();
+    //
+    //    for (ClassDescription classDescription : ) {
+    //      // Message Logic
+    //    }
   }
 
   public List<String> getReserved() {
@@ -233,7 +237,6 @@ public class JavaDetectorImpl extends DetectorImpl {
    * @param functionDescriptions The functions to be described
    * @return The message
    */
-
   public String getMessageFunctionsJava(ArrayList<FunctionDescription> functionDescriptions) {
     StringBuilder message = new StringBuilder();
 
@@ -271,43 +274,28 @@ public class JavaDetectorImpl extends DetectorImpl {
   public String getMessageClassesJava(ArrayList<ClassDescription> classDescriptions) {
     StringBuilder message = new StringBuilder();
 
-    for (FunctionDescription functionDescription : functionDescriptions) {
+    for (ClassDescription classDescription : classDescriptions) {
       message.append("Created function ");
-      if (functionDescription.getRetType().equals("void")) {
-        message.append("with void return type, called ");
-      } else {
-        message.append("with ");
-        message.append(functionDescription.getRetType());
-        message.append(" return type, called ");
-      }
-      message.append(functionDescription.getFunctionName());
-      message.append(" and arguments as follows: ");
-      for (int j = 0; j < functionDescription.getArgs().size(); j++) {
-        message.append(functionDescription.getArgs().get(j));
-        if (j + 1 == functionDescription.getArgs().size()) {
-
-        } else {
-          message.append(", ");
-        }
-      }
-      message.append(".");
+      //      if (Description.getRetType().equals("void")) {
+      //        message.append("with void return type, called ");
+      //      } else {
+      //        message.append("with ");
+      //        message.append(functionDescription.getRetType());
+      //        message.append(" return type, called ");
+      //      }
+      //      message.append(functionDescription.getFunctionName());
+      //      message.append(" and arguments as follows: ");
+      //      for (int j = 0; j < functionDescription.getArgs().size(); j++) {
+      //        message.append(functionDescription.getArgs().get(j));
+      //        if (j + 1 == functionDescription.getArgs().size()) {
+      //
+      //        } else {
+      //          message.append(", ");
+      //        }
+      //      }
+      //      message.append(".");
+      //    }
     }
-
     return message.toString();
-
-    return "";
-  }
-
-  public static void main(String[] args) {
-    ArrayList<String> arguments = new ArrayList<>();
-    JavaDetectorImpl j = new JavaDetectorImpl();
-    arguments.add("String name");
-    arguments.add("int Time");
-    FunctionDescription test =
-        new FunctionDescription("randomFunction", 2, arguments, "Object", "private");
-
-    ArrayList<FunctionDescription> fun = new ArrayList<>();
-    fun.add(test);
-    j.getMessageFunctionsJava(fun);
   }
 }
