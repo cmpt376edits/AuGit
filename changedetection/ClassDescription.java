@@ -17,6 +17,16 @@ public class ClassDescription {
     this.accessModifier = modifier;
   }
 
+  /*
+
+
+
+  BOILERPLATE BELOW! Replace with Lombok . . . 
+
+
+
+   */
+
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
@@ -81,4 +91,5 @@ public class ClassDescription {
   public void setAccessModifier(String modifier) {
     this.accessModifier = modifier;
   }
+
 }
