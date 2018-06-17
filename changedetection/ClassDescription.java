@@ -17,12 +17,18 @@ public class ClassDescription {
 
   @Override
   public String toString() {
-    return "ClassDescription{" +
-            "accessModifier='" + accessModifier + '\'' +
-            ", className='" + className + '\'' +
-            ", numFunctions=" + numFunctions +
-            ", functions=" + functions +
-            '}';
+    return "ClassDescription{"
+        + "accessModifier='"
+        + accessModifier
+        + '\''
+        + ", className='"
+        + className
+        + '\''
+        + ", numFunctions="
+        + numFunctions
+        + ", functions="
+        + functions
+        + '}';
   }
 
   @Override
