@@ -8,6 +8,7 @@ import java.util.List;
 public class JavaDetectorImpl extends DetectorImpl {
 
   private List<String> reserved = new ArrayList();
+  private List<FunctionDescription> funcDescList = new ArrayList();
 
   /**
    * TODO (rmartin) Finish this function
