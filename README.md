@@ -23,3 +23,4 @@ For any questions please contact reece.martin@mail.utoronto.ca
 
 # Next Steps
 - Working on changing the message methods to simply use a toString alternative in ClassDesc and FuncDesc
+- Class Detection
