@@ -178,12 +178,21 @@ public class JavaDetectorImpl extends DetectorImpl {
     this.reserved = reserved;
   }
 
+  public List<FunctionDescription> getFuncDescList() {
+    return funcDescList;
+  }
+
+  public void setFuncDescList(List<FunctionDescription> funcDescList) {
+    this.funcDescList = funcDescList;
+  }
+
   /**
    * Generates a message for summarizing the functions passed in
    *
    * @param functionDescriptions The functions to be described
    * @return The message
    */
+
   public String getMessageFunctionsJava(ArrayList<FunctionDescription> functionDescriptions) {
     StringBuilder message = new StringBuilder();
 
