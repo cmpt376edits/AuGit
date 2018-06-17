@@ -1,8 +1,25 @@
 // TODO add javadoc
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class ClassDescription {
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    ClassDescription that = (ClassDescription) o;
+    return numFunctions == that.numFunctions
+        && Objects.equals(accessModifier, that.accessModifier)
+        && Objects.equals(className, that.className)
+        && Objects.equals(functions, that.functions);
+  }
+
+  @Override
+  public int hashCode() {
+
+    return Objects.hash(accessModifier, className, numFunctions, functions);
+  }
 
   public String getClassName() {
     return className;
