@@ -4,6 +4,20 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class FunctionDescription {
+  private String retType;
+  private String functionName;
+  private int numArgs;
+  private ArrayList<String> args;
+  private String accessMod;
+
+  public FunctionDescription(
+      String functionName, int numArgs, ArrayList<String> args, String retType, String accessMod) {
+    this.functionName = functionName;
+    this.numArgs = numArgs;
+    this.args = args;
+    this.retType = retType;
+    this.accessMod = accessMod;
+  }
 
   @Override
   public boolean equals(Object o) {
@@ -79,21 +93,6 @@ public class FunctionDescription {
   }
 
   public void setAccessMod(String accessMod) {
-    this.accessMod = accessMod;
-  }
-
-  private String retType;
-  private String functionName;
-  private int numArgs;
-  private ArrayList<String> args;
-  private String accessMod;
-
-  public FunctionDescription(
-      String functionName, int numArgs, ArrayList<String> args, String retType, String accessMod) {
-    this.functionName = functionName;
-    this.numArgs = numArgs;
-    this.args = args;
-    this.retType = retType;
     this.accessMod = accessMod;
   }
 }
