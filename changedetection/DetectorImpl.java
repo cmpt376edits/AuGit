@@ -1,5 +1,5 @@
 public abstract class DetectorImpl implements Detector {
-  
+
   /**
    * Returns a substring of the second string from the point where the strings differ until the end
    * of the second string
