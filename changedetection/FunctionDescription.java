@@ -18,6 +18,17 @@ public class FunctionDescription {
   }
 
   @Override
+  public String toString() {
+    return "FunctionDescription{" +
+            "retType='" + retType + '\'' +
+            ", functionName='" + functionName + '\'' +
+            ", numArgs=" + numArgs +
+            ", args=" + args +
+            ", accessMod='" + accessMod + '\'' +
+            '}';
+  }
+
+  @Override
   public int hashCode() {
 
     return Objects.hash(retType, functionName, numArgs, args, accessMod);
