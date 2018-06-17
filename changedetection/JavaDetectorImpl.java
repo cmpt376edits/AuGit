@@ -140,7 +140,7 @@ public class JavaDetectorImpl extends DetectorImpl {
                             
       if (stat) {
         // Function is Static
-        // Access Modifer
+        // Access Modifier
         while (curIndex > 0 && diff.charAt(curIndex) != ' ') {
           curIndex--;
         }
@@ -148,7 +148,7 @@ public class JavaDetectorImpl extends DetectorImpl {
         lastLoc = curIndex - 1;
       } else {
         // Function isn't Static
-        // Access Modifer
+        // Access Modifier
         accessMod = diff.substring(curIndex, (int) checkedIndice);
       }
 
@@ -170,6 +170,12 @@ public class JavaDetectorImpl extends DetectorImpl {
 //    }
   }
 
+  /**
+   * Generates a message for summarizing the functions passed in
+   *
+   * @param functionDescriptions The functions to be described
+   * @return The message
+   */
   public String getMessageFunctionsJava(ArrayList<FunctionDescription> functionDescriptions) {
     StringBuilder message = new StringBuilder();
 
