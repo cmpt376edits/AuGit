@@ -4,6 +4,19 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class ClassDescription {
+  private String accessModifier;
+  private String className;
+  private int numFunctions;
+  private ArrayList<FunctionDescription> functions;
+
+  public ClassDescription(
+      String className, int numArgs, ArrayList<FunctionDescription> args, String modifier) {
+    this.className = className;
+    this.numFunctions = numFunctions;
+    this.functions = functions;
+    this.accessModifier = modifier;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
@@ -66,19 +79,6 @@ public class ClassDescription {
   }
 
   public void setAccessModifier(String modifier) {
-    this.accessModifier = modifier;
-  }
-
-  private String accessModifier;
-  private String className;
-  private int numFunctions;
-  private ArrayList<FunctionDescription> functions;
-
-  public ClassDescription(
-      String className, int numArgs, ArrayList<FunctionDescription> args, String modifier) {
-    this.className = className;
-    this.numFunctions = numFunctions;
-    this.functions = functions;
     this.accessModifier = modifier;
   }
 }
