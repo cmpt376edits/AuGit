@@ -19,6 +19,8 @@ public class JavaDetectorImpl extends DetectorImpl {
   }
 
   /**
+   * This function detects functions and sets the funcDescList to match.
+   *
    * @param origin The previous code
    * @param current The current code
    */
