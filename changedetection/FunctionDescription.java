@@ -10,22 +10,30 @@ public class FunctionDescription {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
     FunctionDescription that = (FunctionDescription) o;
-    return numArgs == that.numArgs &&
-            Objects.equals(retType, that.retType) &&
-            Objects.equals(functionName, that.functionName) &&
-            Objects.equals(args, that.args) &&
-            Objects.equals(accessMod, that.accessMod);
+    return numArgs == that.numArgs
+        && Objects.equals(retType, that.retType)
+        && Objects.equals(functionName, that.functionName)
+        && Objects.equals(args, that.args)
+        && Objects.equals(accessMod, that.accessMod);
   }
 
   @Override
   public String toString() {
-    return "FunctionDescription{" +
-            "retType='" + retType + '\'' +
-            ", functionName='" + functionName + '\'' +
-            ", numArgs=" + numArgs +
-            ", args=" + args +
-            ", accessMod='" + accessMod + '\'' +
-            '}';
+    return "FunctionDescription{"
+        + "retType='"
+        + retType
+        + '\''
+        + ", functionName='"
+        + functionName
+        + '\''
+        + ", numArgs="
+        + numArgs
+        + ", args="
+        + args
+        + ", accessMod='"
+        + accessMod
+        + '\''
+        + '}';
   }
 
   @Override
