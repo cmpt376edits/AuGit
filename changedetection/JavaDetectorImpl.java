@@ -185,8 +185,7 @@ public class JavaDetectorImpl extends DetectorImpl {
       message.append(".");
     }
 
-    System.out.println(message.toString());
-    return "";
+    return message.toString();
   }
 
   public String getMessageClassesJava(ArrayList<ClassDescription> classDescriptions) {
