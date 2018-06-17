@@ -204,6 +204,12 @@ public class JavaDetectorImpl extends DetectorImpl {
     return message.toString();
   }
 
+  /**
+   * Generates a message for summarizing the classes passed in
+   *
+   * @param classDescriptions The classes to be described
+   * @return The message
+   */
   public String getMessageClassesJava(ArrayList<ClassDescription> classDescriptions) {
     StringBuilder message = new StringBuilder();
 
