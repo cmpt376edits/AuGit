@@ -1,8 +1,27 @@
 // TODO add javadoc
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class FunctionDescription {
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    FunctionDescription that = (FunctionDescription) o;
+    return numArgs == that.numArgs &&
+            Objects.equals(retType, that.retType) &&
+            Objects.equals(functionName, that.functionName) &&
+            Objects.equals(args, that.args) &&
+            Objects.equals(accessMod, that.accessMod);
+  }
+
+  @Override
+  public int hashCode() {
+
+    return Objects.hash(retType, functionName, numArgs, args, accessMod);
+  }
 
   public String getFunctionName() {
     return functionName;
