@@ -29,8 +29,8 @@
       <file leaf-file-name="JavaDetectorImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/changedetection/JavaDetectorImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="155" column="83" selection-start-line="155" selection-start-column="83" selection-end-line="155" selection-end-column="83" />
+            <state relative-caret-position="2528">
+              <caret line="162" column="38" selection-start-line="162" selection-start-column="38" selection-end-line="162" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -360,8 +360,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/changedetection/JavaDetectorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="155" column="83" selection-start-line="155" selection-start-column="83" selection-end-line="155" selection-end-column="83" />
+        <state relative-caret-position="2528">
+          <caret line="162" column="38" selection-start-line="162" selection-start-column="38" selection-end-line="162" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

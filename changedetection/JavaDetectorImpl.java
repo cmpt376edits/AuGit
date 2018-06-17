@@ -159,8 +159,8 @@ public class JavaDetectorImpl extends DetectorImpl {
   /**
    * This function detects classes in code and sets the classDescList full of them.
    *
-   * @param origin
-   * @param current
+   * @param origin The past code.
+   * @param current The modified code.
    */
   public void detectClasses(String origin, String current){
 //    StringBuilder message = new StringBuilder();
