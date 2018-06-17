@@ -153,11 +153,11 @@ public class JavaDetectorImpl extends DetectorImpl {
   }
 
   public void detectClasses(String origin, String current){
-    StringBuilder message = new StringBuilder();
-    
-    for (ClassDescription classDescription : ) {
-      // Message Logic
-    }
+//    StringBuilder message = new StringBuilder();
+//
+//    for (ClassDescription classDescription : ) {
+//      // Message Logic
+//    }
   }
 
   public String getMessageFunctionsJava(ArrayList<FunctionDescription> functionDescriptions) {

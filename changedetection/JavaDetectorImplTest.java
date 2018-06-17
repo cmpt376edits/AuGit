@@ -1,3 +1,5 @@
+import org.junit.jupiter.api.Test;
+
 import java.util.ArrayList;
 
 public class JavaDetectorImplTest {
@@ -9,7 +11,7 @@ public class JavaDetectorImplTest {
 
   @Test
   public void detectClassesTest(String origin, String current) {
-    // Test Code Here
+
   }
 
   @Test
