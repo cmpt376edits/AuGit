@@ -16,6 +16,16 @@ public class ClassDescription {
   }
 
   @Override
+  public String toString() {
+    return "ClassDescription{" +
+            "accessModifier='" + accessModifier + '\'' +
+            ", className='" + className + '\'' +
+            ", numFunctions=" + numFunctions +
+            ", functions=" + functions +
+            '}';
+  }
+
+  @Override
   public int hashCode() {
 
     return Objects.hash(accessModifier, className, numFunctions, functions);
