@@ -170,6 +170,14 @@ public class JavaDetectorImpl extends DetectorImpl {
 //    }
   }
 
+  public List<String> getReserved() {
+    return reserved;
+  }
+
+  public void setReserved(List<String> reserved) {
+    this.reserved = reserved;
+  }
+
   /**
    * Generates a message for summarizing the functions passed in
    *
