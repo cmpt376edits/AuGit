@@ -9,6 +9,7 @@ public class JavaDetectorImpl extends DetectorImpl {
 
   private List<String> reserved = new ArrayList();
   private List<FunctionDescription> funcDescList = new ArrayList();
+  private List<ClassDescription> classDescList = new ArrayList();
 
   /**
    * TODO (rmartin) Finish this function
