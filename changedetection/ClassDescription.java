@@ -19,6 +19,7 @@ public class ClassDescription {
 
   public String toMessage(){
     return "";
+    // This needs to have args to change the message
   }
 
   /*
