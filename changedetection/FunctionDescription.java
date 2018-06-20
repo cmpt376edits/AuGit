@@ -40,10 +40,8 @@ public class FunctionDescription {
         }
       }
       message.append(".");
+      return message.toString();
     }
-
-    return message.toString();
-}
 
   /*
 
