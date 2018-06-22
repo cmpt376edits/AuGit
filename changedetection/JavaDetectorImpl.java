@@ -241,7 +241,7 @@ public class JavaDetectorImpl extends DetectorImpl {
     StringBuilder message = new StringBuilder();
 
     for (FunctionDescription functionDescription : functionDescriptions) {
-      // use the function in functionDescription
+      message.append(functionDescription.getMessage());
     }
 
     return message.toString();
