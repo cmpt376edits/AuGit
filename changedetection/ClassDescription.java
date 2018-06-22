@@ -17,7 +17,7 @@ public class ClassDescription {
     this.accessModifier = modifier;
   }
 
-  public String toMessage(){
+  public String toMessage(){ // TODO args?
     return "";
     // This needs to have args to change the message
   }
