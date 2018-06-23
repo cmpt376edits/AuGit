@@ -20,7 +20,7 @@ public class FunctionDescriptionTest {
     setUp();
     String message = this.func.toMessage();
     assert (message)
-        .equals(
-            "Created function with void return type, called genericFunction and arguments as follows: a, b, c.");
+            .equals(
+                    "Created function with void return type, called genericFunction and arguments as follows: a, b, c.");
   }
 }

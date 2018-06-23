@@ -10,14 +10,16 @@ public class FunctionDescription {
   private int numArgs;
   private List<String> args;
   private String accessMod;
+  private boolean delStat;
 
   FunctionDescription(
-      String functionName, int numArgs, List<String> args, String retType, String accessMod) {
+      String functionName, int numArgs, List<String> args, String retType, String accessMod, boolean delStat) {
     this.functionName = functionName;
     this.numArgs = numArgs;
     this.args = args;
     this.retType = retType;
     this.accessMod = accessMod;
+    this.delStat = delStat;
   }
 
   String toMessage() {
