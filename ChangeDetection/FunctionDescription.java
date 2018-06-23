@@ -12,7 +12,7 @@ public class FunctionDescription {
   private String accessMod;
   private boolean delStat;
 
-  FunctionDescription(
+  public FunctionDescription(
       String functionName,
       int numArgs,
       List<String> args,
@@ -27,7 +27,7 @@ public class FunctionDescription {
     this.delStat = delStat;
   }
 
-  String toMessage() {
+  public String toMessage() {
     StringBuilder message = new StringBuilder();
     if (this.isDelStat()) {
       message.append("Deleted function ");
