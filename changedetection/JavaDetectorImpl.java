@@ -13,6 +13,7 @@ public class JavaDetectorImpl extends DetectorImpl {
   private List<FunctionDescription> funcDescList = new ArrayList();
   private List<ClassDescription> classDescList = new ArrayList();
 
+  // TODO (rmartin) Hacky please fix
   public JavaDetectorImpl() {
     this.reserved = null;
     this.funcDescList = null;

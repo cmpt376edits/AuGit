@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5710de3c-74de-4657-bf34-b465bd45fbc8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changedetection/JavaDetectorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/changedetection/JavaDetectorImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/changedetection/JavaDetectorImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/changedetection/JavaDetectorImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AuGit/FileToString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AuGit/changedetection.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AuGit/changedetection.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,8 +48,8 @@
       <file leaf-file-name="JavaDetectorImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/changedetection/JavaDetectorImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-579">
-              <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+            <state relative-caret-position="829">
+              <caret line="209" column="3" lean-forward="true" selection-start-line="9" selection-start-column="52" selection-end-line="209" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -59,8 +57,8 @@
       <file leaf-file-name="JavaDetectorImplTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/changedetection/JavaDetectorImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+            <state relative-caret-position="557">
+              <caret line="409" column="7" lean-forward="true" selection-start-line="409" selection-start-column="7" selection-end-line="409" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,7 +69,7 @@
       <file leaf-file-name="ProjUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/changedetection/ProjUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
+            <state relative-caret-position="752">
               <caret line="47" column="31" lean-forward="true" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -301,6 +299,11 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="JavaDetectorImplTest - 2018.06.23 at 13h 07m 07s.xml">
+      <configuration name="JavaDetectorImplTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
@@ -368,6 +371,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/changedetection/ReservedData/java_reserved.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/AuGit/changedetection.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changedetection/ProjUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="752">
+          <caret line="47" column="31" lean-forward="true" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/changedetection/ClassDescription.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -394,37 +417,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/changedetection/ReservedData/java_reserved.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/changedetection/ProjUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="47" column="31" lean-forward="true" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/AuGit/changedetection.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/changedetection/JavaDetectorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-579">
-          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        <state relative-caret-position="829">
+          <caret line="209" column="3" lean-forward="true" selection-start-line="9" selection-start-column="52" selection-end-line="209" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/changedetection/JavaDetectorImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+        <state relative-caret-position="557">
+          <caret line="409" column="7" lean-forward="true" selection-start-line="409" selection-start-column="7" selection-end-line="409" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
