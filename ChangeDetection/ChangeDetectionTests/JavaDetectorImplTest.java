@@ -1,3 +1,5 @@
+package ChangeDetectionTests;
+
 import org.junit.Ignore;
 
 public class JavaDetectorImplTest {
@@ -14,13 +16,8 @@ public class JavaDetectorImplTest {
           + "        && Objects.equals(classDescList, that.classDescList);\n"
           + "  }\n";
 
-  @org.junit.Test
-  public void detectFunctionsTest() {
-    JavaDetectorImpl detector = new JavaDetectorImpl();
-    detector.detectFunctions(SAMPLE_CODE_ORIGIN, SAMPLE_CODE_CURRENT);
-    System.out.println(detector.getFuncDescList());
-    System.out.println(detector.getMessageFunctionsJava());
-  }
+  @Ignore
+  public void detectFunctionsTest() {}
 
   @Ignore
   public void detectClassesTest() {}
