@@ -12,7 +12,7 @@ public class FunctionDescription {
   private String accessMod;
 
   FunctionDescription(
-          String functionName, int numArgs, List<String> args, String retType, String accessMod) {
+      String functionName, int numArgs, List<String> args, String retType, String accessMod) {
     this.functionName = functionName;
     this.numArgs = numArgs;
     this.args = args;
@@ -44,19 +44,29 @@ public class FunctionDescription {
     return message.toString();
   }
 
-  public String toMessage(int arg) { // Todo Args
+  public String toMessage(int arg) {
     StringBuilder message = new StringBuilder();
-    message.append("Created function ");
-    if(arg == 0 || arg == 1 || arg == 2){
-
+    message.append("Created ");
+    message.append(this.getAccessMod());
+    message.append(" function ");
+    if (arg == 0 || arg == 1 || arg == 2) {
+      message.append(this.getFunctionName());
+      message.append('.');
     }
-    if(arg == 0 || arg == 1 || arg == 2){
-
+    if (arg == 1 || arg == 2) {}
+    message.deleteCharAt(message.length() - 1);
+    if (this.getNumArgs() > 0) {
+      message.append("with the following argument(s) ");
+      for (String s : this.getArgs()) {
+        message.append(s + " ");
+      }
+      message.append('.');
+    } else {
+      message.append("with no arguments");
     }
-    if(arg == 0 || arg == 1 || arg == 2){
-
+    if (arg == 2) {
+      message.deleteCharAt(message.length() - 1);
     }
-
     return message.toString();
   }
 
