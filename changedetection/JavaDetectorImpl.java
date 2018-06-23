@@ -13,6 +13,7 @@ public class JavaDetectorImpl extends DetectorImpl {
   private List<FunctionDescription> funcDescList = new ArrayList();
   private List<ClassDescription> classDescList = new ArrayList();
 
+  // TODO (rmartin) Hacky please fix
   public JavaDetectorImpl() {
     this.reserved = null;
     this.funcDescList = null;
@@ -46,8 +47,8 @@ public class JavaDetectorImpl extends DetectorImpl {
     if (o == null || getClass() != o.getClass()) return false;
     JavaDetectorImpl that = (JavaDetectorImpl) o;
     return Objects.equals(reserved, that.reserved)
-        && Objects.equals(funcDescList, that.funcDescList)
-        && Objects.equals(classDescList, that.classDescList);
+            && Objects.equals(funcDescList, that.funcDescList)
+            && Objects.equals(classDescList, that.classDescList);
   }
 
   @Override
@@ -70,7 +71,7 @@ public class JavaDetectorImpl extends DetectorImpl {
     // TODO (rmartin) Add Vanilla Javas reserved words to our List
     // TODO (rmartin) Detect Java Version for these?
     // TODO (rmartin) make sure to check we arent adding these
-    ProjUtil.getReserved("/ReservedData/java_reserved.txt");
+    //ProjUtil.getReserved("ReservedData\\java_reserved.txt");
 
     // Get reserved words for installed plugins and libraries
     // getReservedLibraries call
@@ -135,7 +136,10 @@ public class JavaDetectorImpl extends DetectorImpl {
         // Access Modifier
         accessMod = diff.substring(curIndex, (int) checkedIndice);
       }
+      functionByName.add(new FunctionDescription(name, arguments.size(), (ArrayList<String>) arguments, retType, accessMod));
     }
+
+    this.funcDescList = functionByName;
   }
 
   /**
@@ -179,13 +183,12 @@ public class JavaDetectorImpl extends DetectorImpl {
   /**
    * Generates a message for summarizing the functions passed in
    *
-   * @param functionDescriptions The functions to be described
    * @return The message
    */
-  public String getMessageFunctionsJava(ArrayList<FunctionDescription> functionDescriptions) {
+  public String getMessageFunctionsJava() {
     StringBuilder message = new StringBuilder();
 
-    for (FunctionDescription functionDescription : functionDescriptions) {
+    for (FunctionDescription functionDescription : this.funcDescList) {
       message.append(functionDescription.toMessage()); // TODO args
     }
 
@@ -198,10 +201,10 @@ public class JavaDetectorImpl extends DetectorImpl {
    * @param classDescriptions The classes to be described
    * @return The message
    */
-  public String getMessageClassesJava(ArrayList<ClassDescription> classDescriptions) {
+  public String getMessageClassesJava() {
     StringBuilder message = new StringBuilder();
 
-    for (ClassDescription classDescription : classDescriptions) {
+    for (ClassDescription classDescription : this.classDescList) {
       message.append(classDescription.toMessage()); // TODO args
     }
 
