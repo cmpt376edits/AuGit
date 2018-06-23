@@ -9,15 +9,15 @@ import java.util.Objects;
 
 public class JavaDetectorImpl extends DetectorImpl {
 
-  private List<String> reserved = new ArrayList();
+  private List<String> reserved;
   private List<FunctionDescription> funcDescList = new ArrayList();
   private List<ClassDescription> classDescList = new ArrayList();
 
   // TODO (rmartin) Hacky please fix
   public JavaDetectorImpl() {
-    this.reserved = null;
-    this.funcDescList = null;
-    this.classDescList = null;
+    this.reserved = new ArrayList();
+    this.funcDescList = new ArrayList();
+    this.classDescList = new ArrayList();
   }
 
   /**
