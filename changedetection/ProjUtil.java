@@ -52,7 +52,10 @@ public class ProjUtil {
   }
 
   public static void main(String[] args) {
-    String filePath = "/* Bring up Dialog Potentially to get file or use cwd */";
-    String res = convertToString(filePath);
+    // String filePath = "/* Bring up Dialog Potentially to get file or use cwd */";
+    // String res = convertToString(filePath);
+    String filePath = "ReservedData/java_reserved.txt";
+    File file = new File(filePath);
+    System.out.println(file.filePath);
   }
 }
