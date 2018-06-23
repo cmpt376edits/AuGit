@@ -1,8 +1,11 @@
 // TODO Add Unittest
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
-public class FileToString {
+public class ProjUtil {
+
   /**
    * Returns a String containing all the characters from the file at filePath, with all the newlines
    * and spaces removed.
@@ -24,6 +27,24 @@ public class FileToString {
         buf = in.readLine();
       }
       return s.toString();
+    } catch (IOException iox) {
+      iox.printStackTrace();
+    }
+    return null;
+  }
+
+  public static List<String> getReserved(String filePath) {
+    File file = new File(filePath);
+    StringBuilder s = new StringBuilder();
+    List<String> reservedVals = new ArrayList();
+    try {
+      BufferedReader in = new BufferedReader(new FileReader(file));
+      String buf = in.readLine();
+      while (buf != null) {
+        reservedVals.add(buf);
+        buf = in.readLine();
+      }
+      return reservedVals;
     } catch (IOException iox) {
       iox.printStackTrace();
     }

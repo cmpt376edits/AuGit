@@ -20,3 +20,6 @@ Plans have shifted to try and write most of AuGit in Kotlin rather than Java as 
 
 # Contact
 For any questions please contact reece.martin@mail.utoronto.ca
+
+# Next Steps
+- Further Organization of Boards

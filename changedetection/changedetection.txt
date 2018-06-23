@@ -4,8 +4,10 @@ The Process:
 
 Take a commit and the branches previous head --> find the difference using Khoris difference function to pull out the differece
 
-between the two strings --> using function detection code to create a list of function objects in our List --> detect arguments
+TODO Get code to look inside curly braces to only expose functions/ and or classes
+
+between the two strings --> using function and class detection code to create a list of functiondesc and classdesc objects in our List --> detect arguments
 
 and return types and add them to the function objects
 
-As of May 31, several Kotlin Files have been converted over from Java. The only Kotlin file I do not plan to use immediately is FileToString.kt
+As of May 31, several Kotlin Files have been converted over from Java. The only Kotlin file I do not plan to use immediately is ProjUtil.kt

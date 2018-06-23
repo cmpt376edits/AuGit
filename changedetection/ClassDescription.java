@@ -1,8 +1,69 @@
-// TODO add javadoc, and unittest
+// TODO add javadoc
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class ClassDescription {
+  private String accessModifier;
+  private String className;
+  private int numFunctions;
+  private ArrayList<FunctionDescription> functions;
+
+  public ClassDescription(
+      String className, int numArgs, ArrayList<FunctionDescription> args, String modifier) {
+    this.className = className;
+    this.numFunctions = numFunctions;
+    this.functions = functions;
+    this.accessModifier = modifier;
+  }
+
+  public String toMessage(){ // TODO args?
+    return "";
+    // This needs to have args to change the message
+  }
+
+  /*
+
+
+
+  BOILERPLATE BELOW! Replace with Lombok . . .
+
+
+
+   */
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    ClassDescription that = (ClassDescription) o;
+    return numFunctions == that.numFunctions
+        && Objects.equals(accessModifier, that.accessModifier)
+        && Objects.equals(className, that.className)
+        && Objects.equals(functions, that.functions);
+  }
+
+  @Override
+  public String toString() {
+    return "ClassDescription{"
+        + "accessModifier='"
+        + accessModifier
+        + '\''
+        + ", className='"
+        + className
+        + '\''
+        + ", numFunctions="
+        + numFunctions
+        + ", functions="
+        + functions
+        + '}';
+  }
+
+  @Override
+  public int hashCode() {
+
+    return Objects.hash(accessModifier, className, numFunctions, functions);
+  }
 
   public String getClassName() {
     return className;
@@ -36,16 +97,4 @@ public class ClassDescription {
     this.accessModifier = modifier;
   }
 
-  private String accessModifier;
-  private String className;
-  private int numFunctions;
-  private ArrayList<FunctionDescription> functions;
-
-  public ClassDescription(
-      String className, int numArgs, ArrayList<FunctionDescription> args, String modifier) {
-    this.className = className;
-    this.numFunctions = numFunctions;
-    this.functions = functions;
-    this.accessModifier = modifier;
-  }
 }
