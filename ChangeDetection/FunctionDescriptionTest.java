@@ -7,7 +7,7 @@ public class FunctionDescriptionTest {
 
   private FunctionDescription func;
 
-  public void setUp() {
+  private void setUp() {
     List<String> args = new ArrayList<>();
     args.add("a");
     args.add("b");
@@ -15,7 +15,7 @@ public class FunctionDescriptionTest {
     this.func = new FunctionDescription("genericFunction", 3, args, "void", "public", false);
   }
 
-  public void setUpDel() {
+  private void setUpDel() {
     List<String> args = new ArrayList<>();
     args.add("a");
     args.add("b");
@@ -24,7 +24,7 @@ public class FunctionDescriptionTest {
   }
 
   @Test
-  public void toMessageTestNoArgs() {
+  void toMessageTestNoArgs() {
     setUp();
     String message = this.func.toMessage();
     assert (message)
@@ -33,7 +33,7 @@ public class FunctionDescriptionTest {
   }
 
   @Test
-  public void toMessageTestDeletedNoArgs() {
+  void toMessageTestDeletedNoArgs() {
     setUpDel();
     String message = this.func.toMessage();
     assert (message)
@@ -42,14 +42,14 @@ public class FunctionDescriptionTest {
   }
 
   @Test
-  public void toMessageTestZeroArg() {
+  void toMessageTestZeroArg() {
     setUp();
     String message = this.func.toMessage(0);
     assert (message).equals("Created public function genericFunction.");
   }
 
   @Test
-  public void toMessageTestOneArg() {
+  void toMessageTestOneArg() {
     setUp();
     String message = this.func.toMessage(1);
     assert (message)
@@ -57,7 +57,7 @@ public class FunctionDescriptionTest {
   }
 
   @Test
-  public void toMessageTestTwoArg() {
+  void toMessageTestTwoArg() {
     setUp();
     String message = this.func.toMessage(2);
     assert (message)
@@ -66,14 +66,14 @@ public class FunctionDescriptionTest {
   }
 
   @Test
-  public void toMessageTestDeletedZeroArg() {
+  void toMessageTestDeletedZeroArg() {
     setUpDel();
     String message = this.func.toMessage(0);
     assert (message).equals("Deleted public function genericFunction.");
   }
 
   @Test
-  public void toMessageTestDeletedOneArg() {
+  void toMessageTestDeletedOneArg() {
     setUpDel();
     String message = this.func.toMessage(1);
     assert (message)
@@ -81,7 +81,7 @@ public class FunctionDescriptionTest {
   }
 
   @Test
-  public void toMessageTestDeletedTwoArg() {
+  void toMessageTestDeletedTwoArg() {
     setUpDel();
     String message = this.func.toMessage(2);
     assert (message)
