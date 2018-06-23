@@ -12,8 +12,9 @@ int main (int argc, char* argv){
 
   // command line arguments checking
 
-  // grab files that have been changed
+  // check git status, grab files that have been changed
   
+
   // call java program
 
   // read java output from temp file
