@@ -13,13 +13,10 @@ public class JavaDetectorImpl extends DetectorImpl {
   private List<FunctionDescription> funcDescList = new ArrayList();
   private List<ClassDescription> classDescList = new ArrayList();
 
-  public JavaDetectorImpl(
-      List<String> reserved,
-      List<FunctionDescription> funcDescList,
-      List<ClassDescription> classDescList) {
-    this.reserved = reserved;
-    this.funcDescList = funcDescList;
-    this.classDescList = classDescList;
+  public JavaDetectorImpl() {
+    this.reserved = null;
+    this.funcDescList = null;
+    this.classDescList = null;
   }
 
   /**

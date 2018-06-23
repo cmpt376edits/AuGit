@@ -6,7 +6,7 @@ public class JavaDetectorImplTest {
 
   @Test
   public void detectFunctionsTest() {
-    // Test Code Here
+    JavaDetectorImpl detector = new JavaDetectorImpl()
   }
 
   @Test
