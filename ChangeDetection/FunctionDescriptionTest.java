@@ -12,7 +12,7 @@ public class FunctionDescriptionTest {
     args.add("a");
     args.add("b");
     args.add("c");
-    this.func = new FunctionDescription("genericFunction", 3, args, "void", "public");
+    this.func = new FunctionDescription("genericFunction", 3, args, "void", "public", false);
   }
 
   @Test
@@ -22,5 +22,14 @@ public class FunctionDescriptionTest {
     assert (message)
             .equals(
                     "Created function with void return type, called genericFunction and arguments as follows: a, b, c.");
+  }
+
+  @Test
+  public void toMessageTestDeletedNoArgs() {
+    setUp();
+    String message = this.func.toMessage();
+    assert (message)
+            .equals(
+                    "Deleted function with void return type, called genericFunction and arguments as follows: a, b, c.");
   }
 }

@@ -29,7 +29,11 @@ public class FunctionDescription {
 
   String toMessage() {
     StringBuilder message = new StringBuilder();
-    message.append("Created function ");
+    if (this.isDelStat()) {
+      message.append("Deleted function ");
+    }else{
+      message.append("Created function ");
+    }
     if (this.getRetType().equals("void")) {
       message.append("with void return type, called ");
     } else {
@@ -53,7 +57,11 @@ public class FunctionDescription {
 
   public String toMessage(int arg) {
     StringBuilder message = new StringBuilder();
-    message.append("Created ");
+    if (this.isDelStat()) {
+      message.append("Deleted ");
+    }else{
+      message.append("Created ");
+    }
     message.append(this.getAccessMod());
     message.append(" function ");
     if (arg == 0 || arg == 1 || arg == 2) {
