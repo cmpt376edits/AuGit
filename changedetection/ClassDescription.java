@@ -1,13 +1,14 @@
 // TODO add javadoc
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class ClassDescription {
   private String accessModifier;
   private String className;
   private int numFunctions;
-  private ArrayList<FunctionDescription> functions;
+  private List<FunctionDescription> functions;
 
   public ClassDescription(
       String className, int numArgs, ArrayList<FunctionDescription> args, String modifier) {
@@ -71,7 +72,7 @@ public class ClassDescription {
     this.numFunctions = numFunctions;
   }
 
-  public ArrayList<FunctionDescription> getFunctions() {
+  public List<FunctionDescription> getFunctions() {
     return functions;
   }
 

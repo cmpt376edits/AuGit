@@ -1,17 +1,18 @@
 // TODO add javadoc
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class FunctionDescription {
   private String retType;
   private String functionName;
   private int numArgs;
-  private ArrayList<String> args;
+  private List<String> args;
   private String accessMod;
 
   public FunctionDescription(
-      String functionName, int numArgs, ArrayList<String> args, String retType, String accessMod) {
+      String functionName, int numArgs, List<String> args, String retType, String accessMod) {
     this.functionName = functionName;
     this.numArgs = numArgs;
     this.args = args;
