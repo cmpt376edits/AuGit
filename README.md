@@ -2,7 +2,7 @@
 
 # A revolution for Git contributions.
 
-This applicationn (AuGit -> AUtomated Git commIT) uses automation to custom create Git commit messages specifically targeting any code edited, modified, refactored, or removed with appropriate and accurate narrations of the changes made, their author, and their potential impacts. The project will initially be supporting Java but, plan to expand to support Python and more languages in the future. 
+This application (AuGit -> AUtomated Git commIT) uses automation to custom create Git commit messages specifically targeting any code edited, modified, refactored, or removed with appropriate and accurate narrations of the changes made, their author, and their potential impacts. The project will initially be supporting Java but, plan to expand to support Python and more languages in the future. 
 
 Not only will AuGit allow for generating smart commit messages, but with AuGit Changes you can see the differences between two files at a glance aiding developers in seeing changes in a clear, pragmatic manner.
 
