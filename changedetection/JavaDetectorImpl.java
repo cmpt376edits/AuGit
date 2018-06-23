@@ -47,8 +47,8 @@ public class JavaDetectorImpl extends DetectorImpl {
     if (o == null || getClass() != o.getClass()) return false;
     JavaDetectorImpl that = (JavaDetectorImpl) o;
     return Objects.equals(reserved, that.reserved)
-            && Objects.equals(funcDescList, that.funcDescList)
-            && Objects.equals(classDescList, that.classDescList);
+        && Objects.equals(funcDescList, that.funcDescList)
+        && Objects.equals(classDescList, that.classDescList);
   }
 
   @Override
@@ -64,82 +64,9 @@ public class JavaDetectorImpl extends DetectorImpl {
    * @param current The current code
    */
   public void detectFunctions(String origin, String current) {
-    origin = origin.toLowerCase();
-    current = current.toLowerCase();
-    String diff = difference(origin, current);
 
-    // TODO (rmartin) Add Vanilla Javas reserved words to our List
-    // TODO (rmartin) Detect Java Version for these?
-    // TODO (rmartin) make sure to check we arent adding these
-    //ProjUtil.getReserved("ReservedData\\java_reserved.txt");
+    // set this.funcdesclist to something
 
-    // Get reserved words for installed plugins and libraries
-    // getReservedLibraries call
-
-    List checkedIndices = new ArrayList();
-    List<FunctionDescription> functionByName = new ArrayList<>();
-
-    for (int i = 0; i < diff.length(); i++) {
-
-      // TODO (rmartin) turn this into a regex where the bracket needs to be lead by a char
-      if (diff.charAt(i) == '(') {
-        checkedIndices.add(i);
-      }
-      i++;
-    }
-
-    // Here we need to go to the first word before the indices and then grab the function and add to
-    // our function
-    // list iff it is not reserved
-
-    for (Object checkedIndice : checkedIndices) {
-      String name = "";
-      String accessMod = "";
-      String retType = "";
-      boolean stat = false;
-      List<String> arguments = new ArrayList<>();
-
-      int curIndex = (int) checkedIndice;
-      int lastLoc = 0;
-
-      // Function Name
-      while (curIndex > 0 && diff.charAt(curIndex) != ' ') {
-        curIndex--;
-      }
-      lastLoc = curIndex - 1;
-      name = diff.substring(curIndex, (int) checkedIndice);
-
-      // Return Value
-      while (curIndex > 0 && diff.charAt(curIndex) != ' ') {
-        curIndex--;
-      }
-      retType = diff.substring(curIndex, (lastLoc));
-      lastLoc = curIndex - 1;
-
-      // Static (boolean)
-      while (curIndex > 0 && diff.charAt(curIndex) != ' ') {
-        curIndex--;
-      }
-      lastLoc = curIndex - 1;
-      stat = diff.substring(curIndex, (int) checkedIndice).contains("static");
-
-      if (stat) {
-        // Function is Static
-        // Access Modifier
-        while (curIndex > 0 && diff.charAt(curIndex) != ' ') {
-          curIndex--;
-        }
-        accessMod = diff.substring(curIndex, (lastLoc));
-        lastLoc = curIndex - 1;
-      } else {
-        // Function isn't Static
-        // Access Modifier
-        accessMod = diff.substring(curIndex, (int) checkedIndice);
-      }
-      functionByName.add(new FunctionDescription(name, arguments.size(), (ArrayList<String>) arguments, retType, accessMod));
-    }
-
-    this.funcDescList = functionByName;
   }
 
   /**
@@ -148,13 +75,7 @@ public class JavaDetectorImpl extends DetectorImpl {
    * @param origin The previous code
    * @param current The current code
    */
-  public void detectClasses(String origin, String current) {
-    //    StringBuilder message = new StringBuilder();
-    //
-    //    for (ClassDescription classDescription : ) {
-    //      // Message Logic
-    //    }
-  }
+  public void detectClasses(String origin, String current) {}
 
   public List<String> getReserved() {
     return reserved;
@@ -198,7 +119,6 @@ public class JavaDetectorImpl extends DetectorImpl {
   /**
    * Generates a message for summarizing the classes passed in
    *
-   * @param classDescriptions The classes to be described
    * @return The message
    */
   public String getMessageClassesJava() {
