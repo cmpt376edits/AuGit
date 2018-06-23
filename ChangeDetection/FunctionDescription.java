@@ -13,7 +13,12 @@ public class FunctionDescription {
   private boolean delStat;
 
   FunctionDescription(
-      String functionName, int numArgs, List<String> args, String retType, String accessMod, boolean delStat) {
+      String functionName,
+      int numArgs,
+      List<String> args,
+      String retType,
+      String accessMod,
+      boolean delStat) {
     this.functionName = functionName;
     this.numArgs = numArgs;
     this.args = args;
@@ -150,5 +155,17 @@ public class FunctionDescription {
 
   public void setAccessMod(String accessMod) {
     this.accessMod = accessMod;
+  }
+
+  public void setArgs(List<String> args) {
+    this.args = args;
+  }
+
+  public boolean isDelStat() {
+    return delStat;
+  }
+
+  public void setDelStat(boolean delStat) {
+    this.delStat = delStat;
   }
 }
