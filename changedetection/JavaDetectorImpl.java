@@ -138,6 +138,8 @@ public class JavaDetectorImpl extends DetectorImpl {
       }
       functionByName.add(new FunctionDescription(name, arguments.size(), (ArrayList<String>) arguments, retType, accessMod));
     }
+
+    this.funcDescList = functionByName;
   }
 
   /**
@@ -181,7 +183,6 @@ public class JavaDetectorImpl extends DetectorImpl {
   /**
    * Generates a message for summarizing the functions passed in
    *
-   * @param functionDescriptions The functions to be described
    * @return The message
    */
   public String getMessageFunctionsJava() {
@@ -200,10 +201,10 @@ public class JavaDetectorImpl extends DetectorImpl {
    * @param classDescriptions The classes to be described
    * @return The message
    */
-  public String getMessageClassesJava(ArrayList<ClassDescription> classDescriptions) {
+  public String getMessageClassesJava() {
     StringBuilder message = new StringBuilder();
 
-    for (ClassDescription classDescription : classDescriptions) {
+    for (ClassDescription classDescription : this.classDescList) {
       message.append(classDescription.toMessage()); // TODO args
     }
 
