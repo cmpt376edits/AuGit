@@ -62,10 +62,13 @@ public class FunctionDescription {
       }
       message.append('.');
     } else {
-      message.append("with no arguments");
+      message.append("with no arguments.");
     }
     if (arg == 2) {
       message.deleteCharAt(message.length() - 1);
+      message.append(" and ");
+      message.append(this.getRetType());
+      message.append(" return type.");
     }
     return message.toString();
   }
