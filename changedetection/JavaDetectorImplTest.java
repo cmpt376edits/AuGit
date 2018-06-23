@@ -27,9 +27,7 @@ public class JavaDetectorImplTest {
   }
 
   @Ignore
-  public void detectClassesTest() {
-
-  }
+  public void detectClassesTest() {}
 
   @Ignore
   public void getMessageFunctionsJavaTest() {
