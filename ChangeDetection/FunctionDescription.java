@@ -68,20 +68,21 @@ public class FunctionDescription {
       message.append(this.getFunctionName());
       message.append('.');
     }
-    if (arg == 1 || arg == 2) {}
-    message.deleteCharAt(message.length() - 1);
-    if (this.getNumArgs() > 0) {
-      message.append("with the following argument(s) ");
-      for (String s : this.getArgs()) {
-        message.append(s + " ");
+    if (arg == 1 || arg == 2) {
+      message.deleteCharAt(message.length() - 1);
+      if (this.getNumArgs() > 0) {
+        message.append(" with the following argument(s) ");
+        for (String s : this.getArgs()) {
+          message.append(s + " ");
+        }
+        message.append('.');
+      } else {
+        message.append("with no arguments.");
       }
-      message.append('.');
-    } else {
-      message.append("with no arguments.");
     }
     if (arg == 2) {
       message.deleteCharAt(message.length() - 1);
-      message.append(" and ");
+      message.append("and ");
       message.append(this.getRetType());
       message.append(" return type.");
     }
