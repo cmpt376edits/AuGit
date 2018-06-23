@@ -47,8 +47,8 @@ public class JavaDetectorImpl extends DetectorImpl {
     if (o == null || getClass() != o.getClass()) return false;
     JavaDetectorImpl that = (JavaDetectorImpl) o;
     return Objects.equals(reserved, that.reserved)
-        && Objects.equals(funcDescList, that.funcDescList)
-        && Objects.equals(classDescList, that.classDescList);
+            && Objects.equals(funcDescList, that.funcDescList)
+            && Objects.equals(classDescList, that.classDescList);
   }
 
   @Override
@@ -184,10 +184,10 @@ public class JavaDetectorImpl extends DetectorImpl {
    * @param functionDescriptions The functions to be described
    * @return The message
    */
-  public String getMessageFunctionsJava(ArrayList<FunctionDescription> functionDescriptions) {
+  public String getMessageFunctionsJava() {
     StringBuilder message = new StringBuilder();
 
-    for (FunctionDescription functionDescription : functionDescriptions) {
+    for (FunctionDescription functionDescription : this.funcDescList) {
       message.append(functionDescription.toMessage()); // TODO args
     }
 

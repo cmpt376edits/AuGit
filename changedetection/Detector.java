@@ -8,7 +8,7 @@ public interface Detector {
 
   void detectClasses(String origin, String current);
 
-  String getMessageFunctionsJava(ArrayList<FunctionDescription> functionDescriptions);
+  String getMessageFunctionsJava();
 
-  String getMessageClassesJava(ArrayList<ClassDescription> classDescriptions);
+  String getMessageClassesJava();
 }
