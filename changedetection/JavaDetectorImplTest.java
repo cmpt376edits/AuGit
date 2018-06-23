@@ -22,7 +22,8 @@ public class JavaDetectorImplTest {
   public void detectFunctionsTest() {
     JavaDetectorImpl detector = new JavaDetectorImpl();
     detector.detectFunctions(SAMPLE_CODE_ORIGIN, SAMPLE_CODE_CURRENT);
-    detector.getMessageFunctionsJava();
+    System.out.println(detector.getFuncDescList());
+    System.out.println(detector.getMessageFunctionsJava());
   }
 
   @Ignore
