@@ -1,4 +1,5 @@
 import org.junit.Ignore;
+import org.junit.Test;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -18,7 +19,7 @@ public class JavaDetectorImplTest {
           + "        && Objects.equals(classDescList, that.classDescList);\n"
           + "  }\n";
 
-  @Test
+  @org.junit.Test
   public void detectFunctionsTest() {
     JavaDetectorImpl detector = new JavaDetectorImpl();
     detector.detectFunctions(SAMPLE_CODE_ORIGIN, SAMPLE_CODE_CURRENT);
