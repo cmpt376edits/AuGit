@@ -43,16 +43,6 @@ public class FunctionDescription {
     return message.toString();
   }
 
-  /*
-
-
-
-  BOILERPLATE BELOW! Replace with Lombok . . .
-
-
-
-   */
-
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
