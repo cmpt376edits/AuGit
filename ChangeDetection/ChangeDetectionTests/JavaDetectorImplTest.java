@@ -1,3 +1,5 @@
+package ChangeDetectionTests;
+
 import org.junit.Ignore;
 
 public class JavaDetectorImplTest {

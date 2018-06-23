@@ -10,19 +10,30 @@ public class FunctionDescription {
   private int numArgs;
   private List<String> args;
   private String accessMod;
+  private boolean delStat;
 
   public FunctionDescription(
-      String functionName, int numArgs, List<String> args, String retType, String accessMod) {
+      String functionName,
+      int numArgs,
+      List<String> args,
+      String retType,
+      String accessMod,
+      boolean delStat) {
     this.functionName = functionName;
     this.numArgs = numArgs;
     this.args = args;
     this.retType = retType;
     this.accessMod = accessMod;
+    this.delStat = delStat;
   }
 
-  public String toMessage() { // Todo Args
+  public String toMessage() {
     StringBuilder message = new StringBuilder();
-    message.append("Created function ");
+    if (this.isDelStat()) {
+      message.append("Deleted function ");
+    }else{
+      message.append("Created function ");
+    }
     if (this.getRetType().equals("void")) {
       message.append("with void return type, called ");
     } else {
@@ -41,6 +52,40 @@ public class FunctionDescription {
       }
     }
     message.append(".");
+    return message.toString();
+  }
+
+  public String toMessage(int arg) {
+    StringBuilder message = new StringBuilder();
+    if (this.isDelStat()) {
+      message.append("Deleted ");
+    }else{
+      message.append("Created ");
+    }
+    message.append(this.getAccessMod());
+    message.append(" function ");
+    if (arg == 0 || arg == 1 || arg == 2) {
+      message.append(this.getFunctionName());
+      message.append('.');
+    }
+    if (arg == 1 || arg == 2) {
+      message.deleteCharAt(message.length() - 1);
+      if (this.getNumArgs() > 0) {
+        message.append(" with the following argument(s) ");
+        for (String s : this.getArgs()) {
+          message.append(s + " ");
+        }
+        message.append('.');
+      } else {
+        message.append("with no arguments.");
+      }
+    }
+    if (arg == 2) {
+      message.deleteCharAt(message.length() - 1);
+      message.append("and ");
+      message.append(this.getRetType());
+      message.append(" return type.");
+    }
     return message.toString();
   }
 
@@ -81,7 +126,7 @@ public class FunctionDescription {
     return Objects.hash(retType, functionName, numArgs, args, accessMod);
   }
 
-  public String getFunctionName() {
+  private String getFunctionName() {
     return functionName;
   }
 
@@ -99,13 +144,12 @@ public class FunctionDescription {
 
   public ArrayList<String> getArgs() {
     return new ArrayList<> (args);
-  }
 
   public void setArgs(ArrayList<String> args) {
     this.args = args;
   }
 
-  public String getRetType() {
+  private String getRetType() {
     return retType;
   }
 
@@ -119,5 +163,17 @@ public class FunctionDescription {
 
   public void setAccessMod(String accessMod) {
     this.accessMod = accessMod;
+  }
+
+  public void setArgs(List<String> args) {
+    this.args = args;
+  }
+
+  public boolean isDelStat() {
+    return delStat;
+  }
+
+  public void setDelStat(boolean delStat) {
+    this.delStat = delStat;
   }
 }
