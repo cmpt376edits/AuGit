@@ -22,18 +22,18 @@ public class FunctionDescription {
   public String toMessage() { // Todo Args
     StringBuilder message = new StringBuilder();
       message.append("Created function ");
-      if (functionDescription.getRetType().equals("void")) {
+      if (this.getRetType().equals("void")) {
         message.append("with void return type, called ");
       } else {
         message.append("with ");
-        message.append(functionDescription.getRetType());
+        message.append(this.getRetType());
         message.append(" return type, called ");
       }
-      message.append(functionDescription.getFunctionName());
+      message.append(this.getFunctionName());
       message.append(" and arguments as follows: ");
-      for (int j = 0; j < functionDescription.getArgs().size(); j++) {
-        message.append(functionDescription.getArgs().get(j));
-        if (j + 1 == functionDescription.getArgs().size()) {
+      for (int j = 0; j < this.getArgs().size(); j++) {
+        message.append(this.getArgs().get(j));
+        if (j + 1 == this.getArgs().size()) {
 
         } else {
           message.append(", ");

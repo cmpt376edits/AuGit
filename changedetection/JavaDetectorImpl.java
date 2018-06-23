@@ -241,7 +241,7 @@ public class JavaDetectorImpl extends DetectorImpl {
     StringBuilder message = new StringBuilder();
 
     for (FunctionDescription functionDescription : functionDescriptions) {
-      message.append(functionDescription.getMessage()); // TODO args
+      message.append(functionDescription.toMessage()); // TODO args
     }
 
     return message.toString();
@@ -257,7 +257,7 @@ public class JavaDetectorImpl extends DetectorImpl {
     StringBuilder message = new StringBuilder();
 
     for (ClassDescription classDescription : classDescriptions) {
-      message.append(classDescription.getMessage()); // TODO args
+      message.append(classDescription.toMessage()); // TODO args
     }
 
     return message.toString();
