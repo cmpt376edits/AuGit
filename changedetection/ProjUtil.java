@@ -56,6 +56,5 @@ public class ProjUtil {
     // String res = convertToString(filePath);
     String filePath = "ReservedData/java_reserved.txt";
     File file = new File(filePath);
-    System.out.println(file.filePath);
   }
 }

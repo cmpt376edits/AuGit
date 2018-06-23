@@ -97,7 +97,7 @@ public class FunctionDescription {
     this.numArgs = numArgs;
   }
 
-  public ArrayList<String> getArgs() {
+  public List<String> getArgs() {
     return args;
   }
 
