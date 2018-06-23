@@ -1,6 +1,7 @@
 // TODO Add Unittest
 
 import java.io.*;
+import java.util.List;
 
 public class ProjUtil {
 
@@ -29,6 +30,10 @@ public class ProjUtil {
       iox.printStackTrace();
     }
     return null;
+  }
+
+  public static List<String> getReserved(String filePath) {
+    File file = new File(filePath);
   }
 
   public static void main(String[] args) {
