@@ -11,8 +11,8 @@ public class FunctionDescription {
   private List<String> args;
   private String accessMod;
 
-  public FunctionDescription(
-      String functionName, int numArgs, List<String> args, String retType, String accessMod) {
+  FunctionDescription(
+          String functionName, int numArgs, List<String> args, String retType, String accessMod) {
     this.functionName = functionName;
     this.numArgs = numArgs;
     this.args = args;
@@ -20,7 +20,7 @@ public class FunctionDescription {
     this.accessMod = accessMod;
   }
 
-  public String toMessage() {
+  String toMessage() {
     StringBuilder message = new StringBuilder();
     message.append("Created function ");
     if (this.getRetType().equals("void")) {
@@ -44,27 +44,19 @@ public class FunctionDescription {
     return message.toString();
   }
 
-  public String toMessage(String arg) { // Todo Args
+  public String toMessage(int arg) { // Todo Args
     StringBuilder message = new StringBuilder();
     message.append("Created function ");
-    if (this.getRetType().equals("void")) {
-      message.append("with void return type, called ");
-    } else {
-      message.append("with ");
-      message.append(this.getRetType());
-      message.append(" return type, called ");
-    }
-    message.append(this.getFunctionName());
-    message.append(" and arguments as follows: ");
-    for (int j = 0; j < this.getArgs().size(); j++) {
-      message.append(this.getArgs().get(j));
-      if (j + 1 == this.getArgs().size()) {
+    if(arg == 0 || arg == 1 || arg == 2){
 
-      } else {
-        message.append(", ");
-      }
     }
-    message.append(".");
+    if(arg == 0 || arg == 1 || arg == 2){
+
+    }
+    if(arg == 0 || arg == 1 || arg == 2){
+
+    }
+
     return message.toString();
   }
 
@@ -105,7 +97,7 @@ public class FunctionDescription {
     return Objects.hash(retType, functionName, numArgs, args, accessMod);
   }
 
-  public String getFunctionName() {
+  private String getFunctionName() {
     return functionName;
   }
 
@@ -129,7 +121,7 @@ public class FunctionDescription {
     this.args = args;
   }
 
-  public String getRetType() {
+  private String getRetType() {
     return retType;
   }
 
