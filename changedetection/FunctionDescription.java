@@ -98,7 +98,7 @@ public class FunctionDescription {
   }
 
   public ArrayList<String> getArgs() {
-    return args;
+    return new ArrayList<> (args);
   }
 
   public void setArgs(ArrayList<String> args) {

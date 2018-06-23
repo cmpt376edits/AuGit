@@ -10,14 +10,14 @@ import java.util.Objects;
 public class JavaDetectorImpl extends DetectorImpl {
 
   private List<String> reserved;
-  private List<FunctionDescription> funcDescList = new ArrayList();
-  private List<ClassDescription> classDescList = new ArrayList();
+  private List<FunctionDescription> listDiffFunctions;
+  private List<ClassDescription> listDiffClasses;
 
   // TODO (rmartin) Hacky please fix
   public JavaDetectorImpl() {
     this.reserved = new ArrayList();
-    this.funcDescList = new ArrayList();
-    this.classDescList = new ArrayList();
+    this.listDiffFunctions = new ArrayList();
+    this.listDiffClasses = new ArrayList();
   }
 
   /**
@@ -34,10 +34,10 @@ public class JavaDetectorImpl extends DetectorImpl {
     return "JavaDetectorImpl{"
         + "reserved="
         + reserved
-        + ", funcDescList="
-        + funcDescList
-        + ", classDescList="
-        + classDescList
+        + ", listDiffFunctions="
+        + listDiffFunctions
+        + ", listDiffClasses="
+        + listDiffClasses
         + '}';
   }
 
@@ -47,35 +47,31 @@ public class JavaDetectorImpl extends DetectorImpl {
     if (o == null || getClass() != o.getClass()) return false;
     JavaDetectorImpl that = (JavaDetectorImpl) o;
     return Objects.equals(reserved, that.reserved)
-        && Objects.equals(funcDescList, that.funcDescList)
-        && Objects.equals(classDescList, that.classDescList);
+        && Objects.equals(listDiffFunctions, that.listDiffFunctions)
+        && Objects.equals(listDiffClasses, that.listDiffClasses);
   }
 
   @Override
   public int hashCode() {
 
-    return Objects.hash(reserved, funcDescList, classDescList);
+    return Objects.hash(reserved, listDiffFunctions, listDiffClasses);
   }
 
   /**
-   * This function detects functions and sets the funcDescList full of them
+   * This function detects functions and sets the listDiffFunctions full of them
    *
-   * @param origin The previous code
-   * @param current The current code
+   * @param code the code to operate on
    */
-  public void detectFunctions(String origin, String current) {
-
-    // set this.funcdesclist to something
+  public void detectFunctions(String code, String old) {
 
   }
 
   /**
-   * This function detects classes in code and sets the classDescList full of them
+   * This function detects classes in code and sets the listDiffClasses full of them
    *
-   * @param origin The previous code
-   * @param current The current code
+   * @param code the code the operate on
    */
-  public void detectClasses(String origin, String current) {}
+  public void detectClasses(String code, String old) {}
 
   public List<String> getReserved() {
     return reserved;
@@ -85,20 +81,20 @@ public class JavaDetectorImpl extends DetectorImpl {
     this.reserved = reserved;
   }
 
-  public List<FunctionDescription> getFuncDescList() {
-    return funcDescList;
+  public List<FunctionDescription> getListDiffFunctions() {
+    return listDiffFunctions;
   }
 
-  public void setFuncDescList(List<FunctionDescription> funcDescList) {
-    this.funcDescList = funcDescList;
+  public void setListDiffFunctions(List<FunctionDescription> listDiffFunctions) {
+    this.listDiffFunctions = listDiffFunctions;
   }
 
-  public List<ClassDescription> getClassDescList() {
-    return classDescList;
+  public List<ClassDescription> getListDiffClasses() {
+    return listDiffClasses;
   }
 
-  public void setClassDescList(List<ClassDescription> classDescList) {
-    this.classDescList = classDescList;
+  public void setListDiffClasses(List<ClassDescription> listDiffClasses) {
+    this.listDiffClasses = listDiffClasses;
   }
 
   /**
@@ -109,7 +105,7 @@ public class JavaDetectorImpl extends DetectorImpl {
   public String getMessageFunctionsJava() {
     StringBuilder message = new StringBuilder();
 
-    for (FunctionDescription functionDescription : this.funcDescList) {
+    for (FunctionDescription functionDescription : this.listDiffFunctions) {
       message.append(functionDescription.toMessage()); // TODO args
     }
 
@@ -124,7 +120,7 @@ public class JavaDetectorImpl extends DetectorImpl {
   public String getMessageClassesJava() {
     StringBuilder message = new StringBuilder();
 
-    for (ClassDescription classDescription : this.classDescList) {
+    for (ClassDescription classDescription : this.listDiffClasses) {
       message.append(classDescription.toMessage()); // TODO args
     }
 
