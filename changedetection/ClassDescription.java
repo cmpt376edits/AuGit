@@ -22,16 +22,6 @@ public class ClassDescription {
     // This needs to have args to change the message
   }
 
-  /*
-
-
-
-  BOILERPLATE BELOW! Replace with Lombok . . .
-
-
-
-   */
-
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
