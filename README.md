@@ -22,5 +22,4 @@ Plans have shifted to try and write most of AuGit in Kotlin rather than Java as 
 For any questions please contact reece.martin@mail.utoronto.ca
 
 # Next Steps
-- Working on changing the message methods to simply use a toString alternative in ClassDesc and FuncDesc
-- Class Detection
+- Further Organization of Boards
