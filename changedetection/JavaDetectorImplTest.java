@@ -1,9 +1,4 @@
 import org.junit.Ignore;
-import org.junit.Test;
-import org.junit.jupiter.api.Test;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class JavaDetectorImplTest {
 
