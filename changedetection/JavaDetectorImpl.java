@@ -73,7 +73,7 @@ public class JavaDetectorImpl extends DetectorImpl {
     // TODO (rmartin) Add Vanilla Javas reserved words to our List
     // TODO (rmartin) Detect Java Version for these?
     // TODO (rmartin) make sure to check we arent adding these
-    
+    ProjUtil.getReserved("/ReservedData/java_reserved.txt");
 
     // Get reserved words for installed plugins and libraries
     // getReservedLibraries call
