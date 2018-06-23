@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5710de3c-74de-4657-bf34-b465bd45fbc8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/changedetection/JavaDetectorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/changedetection/JavaDetectorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changedetection/JavaDetectorImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/changedetection/JavaDetectorImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AuGit/FileToString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AuGit/changedetection.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AuGit/changedetection.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,11 +47,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JavaDetectorImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JavaDetectorImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/changedetection/JavaDetectorImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16">
-              <caret line="13" column="65" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
+            <state relative-caret-position="-579">
+              <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JavaDetectorImplTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/changedetection/JavaDetectorImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,13 +108,13 @@
         <option value="$PROJECT_DIR$/changedetection/JavaDetectorImple.java" />
         <option value="$PROJECT_DIR$/changedetection/Detector.java" />
         <option value="$PROJECT_DIR$/changedetection/DetectorImpl.java" />
-        <option value="$PROJECT_DIR$/changedetection/JavaDetectorImplTest.java" />
         <option value="$PROJECT_DIR$/changedetection/ClassDescription.java" />
         <option value="$PROJECT_DIR$/changedetection/FunctionDescription.java" />
         <option value="$PROJECT_DIR$/changedetection/FileToString.java" />
         <option value="$PROJECT_DIR$/changedetection/ProjUtil.java" />
         <option value="$PROJECT_DIR$/changedetection/ReservedData/java_reserved.txt" />
         <option value="$PROJECT_DIR$/changedetection/JavaDetectorImpl.java" />
+        <option value="$PROJECT_DIR$/changedetection/JavaDetectorImplTest.java" />
       </list>
     </option>
   </component>
@@ -135,6 +150,39 @@
               <item name="changedetection" type="462c0819:PsiDirectoryNode" />
               <item name="ReservedData" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AuGit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuGit" type="462c0819:PsiDirectoryNode" />
+              <item name="changedetectionkotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuGit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuGit" type="462c0819:PsiDirectoryNode" />
+              <item name="commandlinetools" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuGit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuGit" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuGit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuGit" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuGit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuGit" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="AuGit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuGit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuGit" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -165,7 +213,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.JavaDetectorImplTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -173,6 +221,23 @@
       <option name="MAIN_CLASS_NAME" value="javaDetector" />
       <module name="AuGit" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="JavaDetectorImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AuGit" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JavaDetectorImplTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -212,8 +277,13 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="Application.javaDetector" />
+      <item itemvalue="JUnit.JavaDetectorImplTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JavaDetectorImplTest" />
         <item itemvalue="Application.javaDetector" />
       </list>
     </recent_temporary>
@@ -243,12 +313,12 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32943678" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.103125" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.103125" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -341,10 +411,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/AuGit/changedetection.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/changedetection/JavaDetectorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="13" column="65" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
+        <state relative-caret-position="-579">
+          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changedetection/JavaDetectorImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
