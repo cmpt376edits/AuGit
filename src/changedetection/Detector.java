@@ -1,3 +1,5 @@
+package changedetection;
+
 import java.util.ArrayList;
 
 // TODO (rmartin) add some comments

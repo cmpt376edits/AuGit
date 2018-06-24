@@ -1,5 +1,7 @@
 // TODO add javadoc
 
+package changedetection;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -143,7 +145,8 @@ public class FunctionDescription {
   }
 
   public ArrayList<String> getArgs() {
-    return new ArrayList<> (args);
+    return new ArrayList<>(args);
+  }
 
   public void setArgs(ArrayList<String> args) {
     this.args = args;

@@ -1,4 +1,5 @@
 // TODO add javadoc
+package changedetection;
 
 import java.util.ArrayList;
 import java.util.List;

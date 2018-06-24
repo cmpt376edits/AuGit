@@ -1,5 +1,6 @@
 package ChangeDetectionTests;
 
+import changedetection.FunctionDescription;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
