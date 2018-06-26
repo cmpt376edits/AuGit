@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FunctionDescriptionTest {
+public class ClassDescriptionTest {
 
-  private FunctionDescription func;
+  private ClassDescription clas;
 
   private void setUp() {
     List<String> args = new ArrayList<>();
