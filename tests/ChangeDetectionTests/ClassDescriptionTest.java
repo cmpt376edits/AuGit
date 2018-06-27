@@ -10,7 +10,9 @@ public class ClassDescriptionTest {
 
   private ClassDescription clas;
 
-  private void setUp() {}
+  private void setUp() {
+    clas = new ClassDescription (//Fill);
+  }
 
   private void setUpDel() {}
 }
