@@ -62,6 +62,8 @@ public class JavaDetectorImpl extends DetectorImpl {
     // Get the difference of those strings with a new function
 
     // Use a string find util with regex to find any function defs
+
+    // Move around to get args etc
   }
 
   /**
