@@ -22,15 +22,6 @@ public class JavaDetectorImpl extends DetectorImpl {
     this.listDiffClasses = new ArrayList();
   }
 
-  /**
-   * TODO (rmartin) Finish this function
-   *
-   * @return List<String> of the reserved words for our libraries
-   */
-  public static List<String> getReservedLibraries(List<String> libraries) {
-    return null;
-  }
-
   @Override
   public String toString() {
     return "JavaDetectorImpl{"
