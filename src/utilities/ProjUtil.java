@@ -1,4 +1,5 @@
 // TODO Add Unittest
+// TODO Add diff function
 
 package changedetection;
 
