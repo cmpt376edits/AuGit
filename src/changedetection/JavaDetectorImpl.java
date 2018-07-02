@@ -46,7 +46,6 @@ public class JavaDetectorImpl extends DetectorImpl {
 
   @Override
   public int hashCode() {
-
     return Objects.hash(reserved, listDiffFunctions, listDiffClasses);
   }
 
@@ -57,7 +56,7 @@ public class JavaDetectorImpl extends DetectorImpl {
    */
   public void detectFunctions(String code, String old) {
     // Get the two strings from both git and using the projutil.converttostring function
-   
+    // Get the difference of those strings with a new function
   }
 
   /**
