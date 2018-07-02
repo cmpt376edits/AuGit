@@ -1,4 +1,5 @@
 // TODO Add Unittest
+// TODO move this out of the change detection directory
 
 package changedetection;
 
