@@ -57,7 +57,8 @@ public class JavaDetectorImpl extends DetectorImpl {
   public void detectFunctions(String code, String old) {
     // Get the two strings from both git and using the projutil.converttostring function
 
-    
+    // Get just the text between the curly brackets
+
     // Get the difference of those strings with a new function
 
     // Use a string find util with regex to find any function defs
