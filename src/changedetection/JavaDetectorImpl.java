@@ -56,7 +56,7 @@ public class JavaDetectorImpl extends DetectorImpl {
    * @param code the code to operate on
    */
   public void detectFunctions(String code, String old) {
-    diff =
+    // Get the two strings from both git and using the projutil.converttostring function
    
   }
 
