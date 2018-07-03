@@ -117,7 +117,7 @@ public class JavaDetectorImpl extends DetectorImpl {
    *
    * @return The message
    */
-  public String getMessageClassesJava() {
+  public String getMessageClasses() {
     StringBuilder message = new StringBuilder();
 
     for (ClassDescription classDescription : this.listDiffClasses) {
