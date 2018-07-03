@@ -14,7 +14,7 @@ public interface Detector {
   // classes between the two and sets the detectors class list to a list of class description objects.
   void detectClasses(String origin, String current);
 
-  String getMessageFunctionsJava();
+  String getMessageFunctions();
 
-  String getMessageClassesJava();
+  String getMessageClasses();
 }
