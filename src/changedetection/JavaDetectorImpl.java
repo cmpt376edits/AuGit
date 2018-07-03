@@ -102,7 +102,7 @@ public class JavaDetectorImpl extends DetectorImpl {
    *
    * @return The message
    */
-  public String getMessageFunctionsJava() {
+  public String getMessageFunctions() {
     StringBuilder message = new StringBuilder();
 
     for (FunctionDescription functionDescription : this.listDiffFunctions) {
