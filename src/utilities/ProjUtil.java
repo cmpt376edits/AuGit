@@ -53,6 +53,29 @@ public class ProjUtil {
     }
     return null;
   }
+  
+  /**
+   * Compares two strings and returns the index of the first difference between the strings
+   *
+   * @param str1 the first string
+   * @param str2 the second string to be compared with the first
+   * @return String
+   */
+  public static int indexOfDifference(String str1, String str2) {
+    if (str1.equals(str2)) {
+      return -1;
+    }
+    if (str1 == null || str2 == null) {
+      return 0;
+    }
+    int i;
+    for (i = 0; i < str1.length() && i < str2.length(); i++) {
+      if (str1.charAt(i) != str2.charAt(i)) {
+        return i;
+      }
+    }
+    return -1;
+  }
 
   public static void main(String[] args) {
     // String filePath = "/* Bring up Dialog Potentially to get file or use cwd */";
