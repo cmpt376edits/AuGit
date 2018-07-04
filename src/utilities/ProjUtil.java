@@ -78,6 +78,7 @@ public class ProjUtil {
     return -1;
   }
   
+  // TODO (rmartin) validate this function works as expected
   /**
    * Returns a substring of the second string from the point where the strings differ until the end
    * of the second string
