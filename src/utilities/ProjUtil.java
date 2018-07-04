@@ -54,6 +54,7 @@ public class ProjUtil {
     return null;
   }
   
+  // TODO (rmartin) validate this function works as expected
   /**
    * Compares two strings and returns the index of the first difference between the strings
    *
