@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class JavaDetectorImpl extends DetectorImpl {
+public class JavaDetectorImpl extends Detector {
 
   private List<String> reserved;
   private List<FunctionDescription> listDiffFunctions;
