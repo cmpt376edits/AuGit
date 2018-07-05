@@ -110,4 +110,8 @@ public class ProjUtil {
     File file = new File(filePath);
     System.out.println(file.getAbsolutePath());
   }
+  
+  public static String getFunctionLevel(String code) {
+    // TODO (rmartin) Return everything within the class but exclude the inside of methods/functions/enums
+  }
 }
