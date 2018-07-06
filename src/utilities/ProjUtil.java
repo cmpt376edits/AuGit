@@ -114,4 +114,8 @@ public class ProjUtil {
   public static String getFunctionLevel(String code) {
     // TODO (rmartin) Return everything within the class but exclude the inside of methods/functions/enums
   }
+  
+  public static String getClassLevel(String code) {
+    // TODO (rmartin) Return everything within the class but exclude the inside of methods/functions/enums
+  }
 }
