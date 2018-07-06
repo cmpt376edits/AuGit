@@ -1,4 +1,6 @@
 // TODO add javadoc
+// Add Test
+
 package changedetection;
 
 import java.util.ArrayList;
