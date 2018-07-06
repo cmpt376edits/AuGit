@@ -1,4 +1,5 @@
 // TODO Add Unittest
+// Should rename?
 
 package changedetection;
 
