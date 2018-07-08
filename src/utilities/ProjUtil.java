@@ -36,7 +36,13 @@ public class ProjUtil {
     return null;
   }
 
-  // TODO (rmartin) add javadoc
+  /**
+   * Get a list of Strings where the Strings represent words that are used in a particular language
+   * or library.
+   *
+   * @param filePath
+   * @return List of Reserved Words
+   */
   public static List<String> getReserved(String filePath) {
     File file = new File(filePath);
     StringBuilder s = new StringBuilder();
