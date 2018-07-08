@@ -67,15 +67,12 @@ public class JavaDetectorImpl extends Detector {
 
         // REGEX SOURCE: https://stackoverflow.com/a/16118844
         Pattern regex = Pattern.compile("((final|public|private|protected|static)+\\s)+[\\$_\\w\\<\\>\\[\\]]*\\s+[\\$_\\w]+\\([^\\)]*\\)?\\s*\\{?[^\\}]*\\}?");
-        Matcher m = regex.matcher(code);
-        if (m.find()) {
-            int position = m.start();
+        Matcher match = regex.matcher(code);
+        if (match.find()) {
+            int position = match.start();
         }
 
         // Get the difference of those strings with a new function
-
-        // Use a string find util with regex to find any function defs
-        //"((final|public|private|protected|static)+\\s)+[\w\<\>\[\]]+\s+(\w+) *\([^\)]*\) *(\{?|[^;])" This regex should work
 
         // Move around to get args etc
     }
