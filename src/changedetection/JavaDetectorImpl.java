@@ -128,4 +128,9 @@ public class JavaDetectorImpl extends Detector {
 
     return message.toString();
   }
+  
+  // TODO Javadoc
+  public List<FunctionDescription> getDiffFunctions(JavaDetectorImpl other) {
+    // return the different functions from two javadetectorimpl's
+  }
 }
