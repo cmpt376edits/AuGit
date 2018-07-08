@@ -31,5 +31,10 @@ public interface Detector {
      */
     String getMessageFunctions();
 
+    /**
+     * Gets a message to explain the added classes.
+     *
+     * @return the message
+     */
     String getMessageClasses();
 }
