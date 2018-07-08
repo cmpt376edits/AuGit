@@ -2,12 +2,11 @@ package ChangeDetectionTests;
 
 import changedetection.FunctionDescription;
 import org.junit.Test;
-import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class FunctionDescriptionTest {
+class FunctionDescriptionTest {
 
   private FunctionDescription func;
 
@@ -27,7 +26,7 @@ public class FunctionDescriptionTest {
     this.func = new FunctionDescription("genericFunction", 3, args, "void", "public", true);
   }
 
-  @Test
+  @org.junit.jupiter.api.Test
   void toMessageTestNoArgs() {
     setUp();
     String message = this.func.toMessage();
