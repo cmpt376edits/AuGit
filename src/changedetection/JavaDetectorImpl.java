@@ -56,13 +56,15 @@ public class JavaDetectorImpl extends Detector {
    */
   public void detectFunctions(String code, String old) {
     // Get the two strings from both git and using the projutil.converttostring function
+    // ^ This is unecessary, just operate on both and take the difference of functions 
 
     // Get just the text between the curly brackets
 
     // Get the difference of those strings with a new function
 
     // Use a string find util with regex to find any function defs
-
+    //"((final|public|private|protected|static)+\\s)+[\w\<\>\[\]]+\s+(\w+) *\([^\)]*\) *(\{?|[^;])" This regex should work
+    
     // Move around to get args etc
   }
 
