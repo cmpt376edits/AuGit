@@ -8,6 +8,8 @@ package changedetection;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class JavaDetectorImpl extends Detector {
 
@@ -62,6 +64,13 @@ public class JavaDetectorImpl extends Detector {
 
         // Get the two strings from both git and using the projutil.converttostring function
         // ^ This is unecessary, just operate on both and take the difference of functions
+
+        // REGEX SOURCE: https://stackoverflow.com/a/16118844
+        Pattern regex = Pattern.compile("((final|public|private|protected|static)+\\s)+[\\$_\\w\\<\\>\\[\\]]*\\s+[\\$_\\w]+\\([^\\)]*\\)?\\s*\\{?[^\\}]*\\}?");
+        Matcher m = regex.matcher(code);
+        if (m.find()) {
+            int position = m.start();
+        }
 
         // Get the difference of those strings with a new function
 
