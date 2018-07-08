@@ -119,7 +119,7 @@ public class ProjUtil {
   }
 
   /**
-   * Return the code-String and remove everything within function curly braces.
+   * Return the code-String and remove everything within the function curly braces.
    *
    * @param code
    * @return the formatted code
@@ -127,7 +127,13 @@ public class ProjUtil {
   public static String getFunctionLevel(String code) {
     // TODO (rmartin) Return everything within the class but exclude the inside of methods/functions/enums
   }
-  
+
+  /**
+   * Return the code-String and remove everything within the class curly braces.
+   *
+   * @param code
+   * @return the formatted code
+   */
   public static String getClassLevel(String code) {
     // TODO (rmartin) Return everything within the class but exclude the inside of methods/functions/enums
   }
