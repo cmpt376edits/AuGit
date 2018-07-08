@@ -117,7 +117,13 @@ public class ProjUtil {
     File file = new File(filePath);
     System.out.println(file.getAbsolutePath());
   }
-  
+
+  /**
+   * Return the code-String and remove everything within function curly braces.
+   *
+   * @param code
+   * @return the formatted code
+   */
   public static String getFunctionLevel(String code) {
     // TODO (rmartin) Return everything within the class but exclude the inside of methods/functions/enums
   }
