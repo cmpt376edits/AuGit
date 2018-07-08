@@ -131,7 +131,7 @@ public class JavaDetectorImpl extends Detector {
 
   /**
    *  Returns a list representing the difference between the current Detector Object,
-   *  and the other object.
+   *  and the other object ~ in terms of functions.
    *
    * @param other
    * @return
@@ -142,7 +142,7 @@ public class JavaDetectorImpl extends Detector {
 
   /**
    *  Returns a list representing the difference between the current Detector Object,
-   *  and the other object.
+   *  and the other object 
    *
    * @param other
    * @return
