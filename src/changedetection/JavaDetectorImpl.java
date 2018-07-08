@@ -55,6 +55,9 @@ public class JavaDetectorImpl extends Detector {
      * @param code the code to operate on
      */
     public void detectFunctions(String code, String old) {
+        List functionIndicesCode = new ArrayList();
+        List functionIndicesOld = new ArrayList();
+
         // Get just the text between the curly brackets
 
         // Get the two strings from both git and using the projutil.converttostring function
