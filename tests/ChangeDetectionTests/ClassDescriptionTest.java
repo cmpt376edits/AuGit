@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ClassDescriptionTest {
+  // TODO copy some tests from functionDescription test
 
   private ClassDescription clas;
 
