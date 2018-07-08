@@ -12,7 +12,7 @@ public class ClassDescriptionTest {
     private ClassDescription clas;
 
     private void setUp() {
-        clas = new ClassDescription(//Fill);
+        //clas = new ClassDescription();//Fill);
     }
 
     private void setUpDel() {
