@@ -139,8 +139,14 @@ public class JavaDetectorImpl extends Detector {
   public List<FunctionDescription> getDiffFunctions(JavaDetectorImpl other) {
     // return the different functions from two javadetectorimpl's
   }
-  
-  // TODO Javadoc
+
+  /**
+   *  Returns a list representing the difference between the current Detector Object,
+   *  and the other object.
+   *
+   * @param other
+   * @return
+   */
   public List<ClassDescription> getDiffClasses(JavaDetectorImpl other) {
     // return the different classes from two javadetectorimpl's
   }
